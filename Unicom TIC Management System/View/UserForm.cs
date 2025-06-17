@@ -22,7 +22,7 @@ namespace Unicom_TIC_Management_System.View
             InitializeComponent();
  
 
-            cmbRole.Items.AddRange(new string[] { "Admin", "Staff" });
+            cmbRole.Items.AddRange(new string[] { "Admin", "Staff" ,"Student" ,"Lecture" });
             LoadUsers();
         }
         private void LoadUsers()

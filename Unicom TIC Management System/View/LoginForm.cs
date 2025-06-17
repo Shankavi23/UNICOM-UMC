@@ -39,7 +39,7 @@ namespace Unicom_TIC_Management_System.View
             if (user != null)
             {
                 MessageBox.Show($"Login successful! Welcome, {user.Role}.");
-                MainForm mainForm = new MainForm(user);
+                MainForm mainForm = new MainForm(user.Role);
                 this.Hide();
                 mainForm.ShowDialog();
                 this.Close();
@@ -53,7 +53,7 @@ namespace Unicom_TIC_Management_System.View
         private void LoginForm_Load(object sender, EventArgs e)
         {
             comboBox1.Items.Clear();
-            comboBox1.Items.AddRange(new string[] { "select your role","Admin", "Staff", "Lecturer", "Student" });
+            comboBox1.Items.AddRange(new string[] { "select your role","Admin", "Staff", "Lecture", "Student" });
             comboBox1.SelectedIndex = 0; // default to Admin
         }
 
@@ -84,7 +84,7 @@ namespace Unicom_TIC_Management_System.View
                 // TODO: Redirect based on role
                 // Example:
                 // if (user.Role == "Admin") { new AdminForm().Show(); }
-                MainForm mainForm = new MainForm(user); // pass user if needed
+                MainForm mainForm = new MainForm(user.Role); // pass user if needed
                 mainForm.Show();
                 this.Hide();
                 //Application.Run(new MainForm());

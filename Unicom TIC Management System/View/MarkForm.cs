@@ -23,7 +23,7 @@ namespace Unicom_TIC_Management_System.View
         private  void LoadMarks()
         {
             MarkController markController = new MarkController();
-var marks = markController.GetAllMarks(); // ✅
+            var marks = markController.GetAllMarks(); // ✅
 
             gridMark.DataSource = null;
             gridMark.DataSource = marks;

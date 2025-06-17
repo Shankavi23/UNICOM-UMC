@@ -8,23 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Unicom_TIC_Management_System.Models;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Unicom_TIC_Management_System.View
 {
     public partial class MainForm : Form
     {
-        public MainForm()
-        {
-            InitializeComponent();
-        }
+      
+        string _role;
 
-        private User currentUser;
+ 
 
-        public MainForm(User user)
+        public MainForm(string Role)
         {
+            _role = Role;
             InitializeComponent();
-            currentUser = user;
-            CustomizeUIByRole(user.Role);
+           
+            
+            ApplyRolePermissions();
         }
         private void LoadFormInPanel(Form form)
         {
@@ -35,26 +36,36 @@ namespace Unicom_TIC_Management_System.View
             panel2.Controls.Add(form);         // Add form to panel
             form.Show();                               // Show the form
         }
-
-        private void CustomizeUIByRole(string role)
+        private void ApplyRolePermissions()
         {
+            string role = _role;
+
             if (role == "Admin")
             {
-                // all features visible
+                // Full access
+                
             }
-            else if (role == "Lecturer")
+            else if (role == "Lecture")
             {
-               // btnAddCourse.Visible = false;
-             //   btnManageStudents.Visible = false;
+                btnuser.Visible = false;
+                button4.Visible = true;
+                button1.Visible = false;
+                button7.Visible = false;
+            }
+            else if (role == "Staff")
+            {
+                
             }
             else if (role == "Student")
             {
-             //   btnAddCourse.Visible = false;
-              //  btnManageStudents.Visible = false;
-              //  btnAddMarks.Visible = false;
+                button4.Visible = false;
+                button6.Visible = false;
+                btnuser.Visible = false;
+                button1.Visible = false;
             }
-            // etc.
         }
+
+        
 
         private void btnuser_Click(object sender, EventArgs e)
         {
@@ -94,6 +105,16 @@ namespace Unicom_TIC_Management_System.View
         private void button9_Click(object sender, EventArgs e)
         {
             LoadFormInPanel(new TimetableForm());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

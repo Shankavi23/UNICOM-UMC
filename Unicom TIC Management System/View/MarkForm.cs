@@ -27,7 +27,7 @@ var marks = markController.GetAllMarks(); // ✅
 
             gridMark.DataSource = null;
             gridMark.DataSource = marks;
-        }
+        }   
 
         private void btnAdd_Click(object sender, EventArgs e)
         {

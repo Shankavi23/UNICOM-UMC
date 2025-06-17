@@ -21,14 +21,14 @@ namespace Unicom_TIC_Management_System
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             Application.Run(new LoginForm());
-            Application.Run(new UserForm());
-            Application.Run(new courseForm1());
-            Application.Run(new RoomForm());
-            Application.Run(new StudentForm());
-            Application.Run(new ExamForm());
-            Application.Run(new TimetableForm());
-            Application.Run(new MarkForm());
-            Application.Run(new SubjectForm());
+            //Application.Run(new UserForm());
+            //Application.Run(new courseForm1());
+            //Application.Run(new RoomForm());
+            //Application.Run(new StudentForm());
+            //Application.Run(new ExamForm());
+            //Application.Run(new TimetableForm());
+            //Application.Run(new MarkForm());
+            //Application.Run(new SubjectForm());
         }
     }
 }

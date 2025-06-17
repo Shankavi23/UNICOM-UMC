@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using Unicom_TIC_Management_System.Database;
@@ -49,6 +49,35 @@ namespace Unicom_TIC_Management_System.Controllers
 
             return users;
         }
+
+        public static User AuthenticateUser(string username, string password, string role)
+        {
+            using (var conn = DbConfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM User WHERE Username = @Username AND Password = @Password AND Role = @Role";
+                cmd.Parameters.AddWithValue("@Username", username);
+                cmd.Parameters.AddWithValue("@Password", password);
+                cmd.Parameters.AddWithValue("@Role", role);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new User
+                        {
+                            UserID = Convert.ToInt32(reader["UserID"]),
+                            Username = reader["Username"].ToString(),
+                            Password = reader["Password"].ToString(),
+                            Role = reader["Role"].ToString()
+                        };
+                    }
+                }
+            }
+
+            return null;
+        }
+
 
         // UPDATE
         public static void UpdateUser(User user)

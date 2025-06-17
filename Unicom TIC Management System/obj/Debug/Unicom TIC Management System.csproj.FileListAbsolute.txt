@@ -60,3 +60,27 @@ C:\Users\Shankavi\Desktop\shan\Unicom TIC Management System\bin\Debug\System.Dat
 C:\Users\Shankavi\Desktop\shan\Unicom TIC Management System\obj\Debug\Unicom T.077940FC.Up2Date
 C:\Users\Shankavi\Desktop\shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.MarkForm.resources
 C:\Users\Shankavi\Desktop\shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.SubjectForm.resources
+Z:\managment project shan\Unicom TIC Management System\bin\Debug\Unicom TIC Management System.exe.config
+Z:\managment project shan\Unicom TIC Management System\bin\Debug\Unicom TIC Management System.exe
+Z:\managment project shan\Unicom TIC Management System\bin\Debug\Unicom TIC Management System.pdb
+Z:\managment project shan\Unicom TIC Management System\bin\Debug\System.Data.SQLite.dll
+Z:\managment project shan\Unicom TIC Management System\bin\Debug\System.Data.SQLite.xml
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom TIC Management System.csproj.AssemblyReference.cache
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.Form1.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.Properties.Resources.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.courseForm1.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.ExamForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.FrontForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.LoginForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.MainForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.MarkForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.RoomForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.StudentForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.SubjectForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.TimetableForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom_TIC_Management_System.View.UserForm.resources
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom TIC Management System.csproj.GenerateResource.cache
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom TIC Management System.csproj.CoreCompileInputs.cache
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom T.077940FC.Up2Date
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom TIC Management System.exe
+Z:\managment project shan\Unicom TIC Management System\obj\Debug\Unicom TIC Management System.pdb

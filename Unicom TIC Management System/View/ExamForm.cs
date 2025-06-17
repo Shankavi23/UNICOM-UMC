@@ -102,7 +102,7 @@ namespace Unicom_TIC_Management_System.View
         private void LoadSubjects()
         {
             SubjectController subjectController = new SubjectController();
-            List<Subject> subjects = subjectController.GetAll();
+            List<Subject> subjects = subjectController.GetAllSubjects();
             cmbSubjects.DataSource = subjects;
             cmbSubjects.DisplayMember = "SubjectName";
             cmbSubjects.ValueMember = "SubjectID";

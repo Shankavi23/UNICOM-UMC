@@ -50,7 +50,7 @@ namespace Unicom_TIC_Management_System.View
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(156, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 13);
+            this.label1.Size = new System.Drawing.Size(13, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = " ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -61,7 +61,7 @@ namespace Unicom_TIC_Management_System.View
             this.studentname.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.studentname.Location = new System.Drawing.Point(156, 67);
             this.studentname.Name = "studentname";
-            this.studentname.Size = new System.Drawing.Size(75, 13);
+            this.studentname.Size = new System.Drawing.Size(112, 20);
             this.studentname.TabIndex = 1;
             this.studentname.Text = "Student Name";
             this.studentname.Click += new System.EventHandler(this.studentname_Click);
@@ -71,7 +71,7 @@ namespace Unicom_TIC_Management_System.View
             this.txtStudentName.BackColor = System.Drawing.SystemColors.Menu;
             this.txtStudentName.Location = new System.Drawing.Point(250, 64);
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(239, 20);
+            this.txtStudentName.Size = new System.Drawing.Size(239, 26);
             this.txtStudentName.TabIndex = 2;
             // 
             // cmbCourse
@@ -80,7 +80,7 @@ namespace Unicom_TIC_Management_System.View
             this.cmbCourse.FormattingEnabled = true;
             this.cmbCourse.Location = new System.Drawing.Point(250, 108);
             this.cmbCourse.Name = "cmbCourse";
-            this.cmbCourse.Size = new System.Drawing.Size(239, 21);
+            this.cmbCourse.Size = new System.Drawing.Size(239, 28);
             this.cmbCourse.TabIndex = 3;
             // 
             // deletestudent
@@ -121,7 +121,8 @@ namespace Unicom_TIC_Management_System.View
             this.dgvstudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvstudents.Location = new System.Drawing.Point(132, 215);
             this.dgvstudents.Name = "dgvstudents";
-            this.dgvstudents.Size = new System.Drawing.Size(392, 169);
+            this.dgvstudents.RowHeadersWidth = 62;
+            this.dgvstudents.Size = new System.Drawing.Size(633, 306);
             this.dgvstudents.TabIndex = 7;
             this.dgvstudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvstudents_CellContentClick);
             this.dgvstudents.SelectionChanged += new System.EventHandler(this.dgvstudents_SelectionChanged);
@@ -132,13 +133,13 @@ namespace Unicom_TIC_Management_System.View
             this.Course.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Course.Location = new System.Drawing.Point(159, 116);
             this.Course.Name = "Course";
-            this.Course.Size = new System.Drawing.Size(40, 13);
+            this.Course.Size = new System.Drawing.Size(60, 20);
             this.Course.TabIndex = 8;
             this.Course.Text = "Course";
             // 
             // StudentForm
             // 
-            this.ClientSize = new System.Drawing.Size(742, 419);
+            this.ClientSize = new System.Drawing.Size(1043, 552);
             this.Controls.Add(this.Course);
             this.Controls.Add(this.dgvstudents);
             this.Controls.Add(this.addstudent);

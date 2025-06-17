@@ -43,9 +43,10 @@
             // 
             this.Roomname.AutoSize = true;
             this.Roomname.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Roomname.Location = new System.Drawing.Point(228, 98);
+            this.Roomname.Location = new System.Drawing.Point(342, 151);
+            this.Roomname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Roomname.Name = "Roomname";
-            this.Roomname.Size = new System.Drawing.Size(74, 13);
+            this.Roomname.Size = new System.Drawing.Size(108, 20);
             this.Roomname.TabIndex = 0;
             this.Roomname.Text = "ROOM NAME";
             // 
@@ -53,18 +54,20 @@
             // 
             this.RoomType.AutoSize = true;
             this.RoomType.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.RoomType.Location = new System.Drawing.Point(229, 151);
+            this.RoomType.Location = new System.Drawing.Point(344, 232);
+            this.RoomType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RoomType.Name = "RoomType";
-            this.RoomType.Size = new System.Drawing.Size(71, 13);
+            this.RoomType.Size = new System.Drawing.Size(103, 20);
             this.RoomType.TabIndex = 2;
             this.RoomType.Text = "ROOM TYPE";
             // 
             // txtRoomName
             // 
             this.txtRoomName.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtRoomName.Location = new System.Drawing.Point(352, 95);
+            this.txtRoomName.Location = new System.Drawing.Point(528, 146);
+            this.txtRoomName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRoomName.Name = "txtRoomName";
-            this.txtRoomName.Size = new System.Drawing.Size(157, 20);
+            this.txtRoomName.Size = new System.Drawing.Size(234, 26);
             this.txtRoomName.TabIndex = 3;
             this.txtRoomName.TextChanged += new System.EventHandler(this.txtRoomName_TextChanged);
             // 
@@ -72,18 +75,21 @@
             // 
             this.cmbRoomType.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.cmbRoomType.FormattingEnabled = true;
-            this.cmbRoomType.Location = new System.Drawing.Point(339, 148);
+            this.cmbRoomType.Location = new System.Drawing.Point(508, 228);
+            this.cmbRoomType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbRoomType.Name = "cmbRoomType";
-            this.cmbRoomType.Size = new System.Drawing.Size(170, 21);
+            this.cmbRoomType.Size = new System.Drawing.Size(253, 28);
             this.cmbRoomType.TabIndex = 4;
             this.cmbRoomType.Text = "Values: Room  ,   Hall";
+            this.cmbRoomType.SelectedIndexChanged += new System.EventHandler(this.cmbRoomType_SelectedIndexChanged);
             // 
             // btnDeleteRoom
             // 
             this.btnDeleteRoom.BackColor = System.Drawing.Color.Coral;
-            this.btnDeleteRoom.Location = new System.Drawing.Point(231, 211);
+            this.btnDeleteRoom.Location = new System.Drawing.Point(346, 325);
+            this.btnDeleteRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDeleteRoom.Name = "btnDeleteRoom";
-            this.btnDeleteRoom.Size = new System.Drawing.Size(69, 21);
+            this.btnDeleteRoom.Size = new System.Drawing.Size(104, 32);
             this.btnDeleteRoom.TabIndex = 5;
             this.btnDeleteRoom.Text = "DELETE";
             this.btnDeleteRoom.UseVisualStyleBackColor = false;
@@ -92,9 +98,10 @@
             // btnUpdateRoom
             // 
             this.btnUpdateRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnUpdateRoom.Location = new System.Drawing.Point(339, 211);
+            this.btnUpdateRoom.Location = new System.Drawing.Point(508, 325);
+            this.btnUpdateRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdateRoom.Name = "btnUpdateRoom";
-            this.btnUpdateRoom.Size = new System.Drawing.Size(69, 21);
+            this.btnUpdateRoom.Size = new System.Drawing.Size(104, 32);
             this.btnUpdateRoom.TabIndex = 6;
             this.btnUpdateRoom.Text = "UPDATE ";
             this.btnUpdateRoom.UseVisualStyleBackColor = false;
@@ -103,9 +110,10 @@
             // btnAddRoom
             // 
             this.btnAddRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAddRoom.Location = new System.Drawing.Point(450, 211);
+            this.btnAddRoom.Location = new System.Drawing.Point(675, 325);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddRoom.Name = "btnAddRoom";
-            this.btnAddRoom.Size = new System.Drawing.Size(69, 21);
+            this.btnAddRoom.Size = new System.Drawing.Size(104, 32);
             this.btnAddRoom.TabIndex = 7;
             this.btnAddRoom.Text = "ADD ROOM";
             this.btnAddRoom.UseVisualStyleBackColor = false;
@@ -114,18 +122,20 @@
             // dgvRooms
             // 
             this.dgvRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRooms.Location = new System.Drawing.Point(231, 259);
+            this.dgvRooms.Location = new System.Drawing.Point(346, 388);
+            this.dgvRooms.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvRooms.Name = "dgvRooms";
-            this.dgvRooms.Size = new System.Drawing.Size(288, 139);
+            this.dgvRooms.RowHeadersWidth = 62;
+            this.dgvRooms.Size = new System.Drawing.Size(590, 224);
             this.dgvRooms.TabIndex = 8;
             this.dgvRooms.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRooms_CellContentClick);
             this.dgvRooms.SelectionChanged += new System.EventHandler(this.ShowsRoomList);
             // 
             // RoomForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.dgvRooms);
             this.Controls.Add(this.btnAddRoom);
             this.Controls.Add(this.btnUpdateRoom);
@@ -134,6 +144,7 @@
             this.Controls.Add(this.txtRoomName);
             this.Controls.Add(this.RoomType);
             this.Controls.Add(this.Roomname);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RoomForm";
             this.Text = "RoomForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).EndInit();

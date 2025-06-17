@@ -71,6 +71,7 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\Mark.cs" />
+    <Compile Include="Models\Roles.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Subject.cs" />
@@ -159,11 +160,17 @@
     <EmbeddedResource Include="View\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\MarkForm.resx">
+      <DependentUpon>MarkForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\RoomForm.resx">
       <DependentUpon>RoomForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubjectForm.resx">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TimetableForm.resx">
       <DependentUpon>TimetableForm.cs</DependentUpon>

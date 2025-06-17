@@ -172,5 +172,10 @@ namespace Unicom_TIC_Management_System.View
             }
 
         }
-}
+
+        private void cmbRoomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

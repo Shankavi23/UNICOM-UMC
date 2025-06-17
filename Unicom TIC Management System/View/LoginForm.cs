@@ -34,5 +34,10 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

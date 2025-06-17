@@ -28,7 +28,7 @@ namespace Unicom_TIC_Management_System.Data
                         ExamName TEXT NOT NULL,
                         SubjectID INTEGER NOT NULL,
                         PRIMARY KEY (ExamID),
-                        FOREIGN KEY (SubjectID) REFERENCES Subject(ID)
+                        FOREIGN KEY (SubjectID) REFERENCES Subject(SubjectID)
                     );
                     
                     CREATE TABLE IF NOT EXISTS Mark (
@@ -37,7 +37,7 @@ namespace Unicom_TIC_Management_System.Data
                         ExamID INTEGER NOT NULL,
                         Score INTEGER NOT NULL,
                         PRIMARY KEY (MarkID),
-                        FOREIGN KEY (StudentID) REFERENCES Student(StudentID)
+                        FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
                         FOREIGN KEY (ExamID) REFERENCES Exam(ExamID)
                     );
                     
@@ -70,7 +70,7 @@ namespace Unicom_TIC_Management_System.Data
                         TimeSlot TEXT NOT NULL,
                         RoomID INTEGER NOT NULL,
                         PRIMARY KEY (TimetableID),
-                        FOREIGN KEY (SubjectID) REFERENCES Subject(ID),
+                        FOREIGN KEY (SubjectID) REFERENCES Subject(SubjectID),
                         FOREIGN KEY (RoomID) REFERENCES Room(RoomID)
 
                     );

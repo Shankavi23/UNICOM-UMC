@@ -100,5 +100,26 @@ namespace Unicom_TIC_Management_System.Controller
                 return rowsAffected > 0;
             }
         }
+        public List<Course> GetAllCourses()
+        {
+            List<Course> courses = new List<Course>();
+            using (var conn = DbConfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM Course";
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        courses.Add(new Course
+                        {
+                            CourseID = Convert.ToInt32(reader["CourseID"]),
+                            CourseName = reader["CourseName"].ToString()
+                        });
+                    }
+                }
+            }
+            return courses;
+        }
     }
 }

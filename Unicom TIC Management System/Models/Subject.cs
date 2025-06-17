@@ -8,7 +8,7 @@ namespace Unicom_TIC_Management_System.Models
 {
     public class Subject
     {
-        public int ID { get; set; }
+        public int SubjectID { get; set; }
         public string SubjectName { get; set; }
         public int CourseID { get; set; }
     }

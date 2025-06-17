@@ -46,9 +46,10 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblUsername.Location = new System.Drawing.Point(74, 68);
+            this.lblUsername.Location = new System.Drawing.Point(111, 105);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(55, 13);
+            this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
             // 
@@ -57,9 +58,10 @@
             this.lblPassword.AutoSize = true;
             this.lblPassword.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPassword.Location = new System.Drawing.Point(74, 124);
+            this.lblPassword.Location = new System.Drawing.Point(111, 191);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblPassword.Size = new System.Drawing.Size(78, 20);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password";
             // 
@@ -68,43 +70,48 @@
             this.lblRole.AutoSize = true;
             this.lblRole.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblRole.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRole.Location = new System.Drawing.Point(74, 181);
+            this.lblRole.Location = new System.Drawing.Point(111, 278);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(29, 13);
+            this.lblRole.Size = new System.Drawing.Size(42, 20);
             this.lblRole.TabIndex = 2;
             this.lblRole.Text = "Role";
             // 
             // txtusername
             // 
             this.txtusername.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtusername.Location = new System.Drawing.Point(150, 65);
+            this.txtusername.Location = new System.Drawing.Point(225, 100);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(175, 20);
+            this.txtusername.Size = new System.Drawing.Size(260, 26);
             this.txtusername.TabIndex = 3;
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtPassword.Location = new System.Drawing.Point(150, 121);
+            this.txtPassword.Location = new System.Drawing.Point(225, 186);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(175, 20);
+            this.txtPassword.Size = new System.Drawing.Size(260, 26);
             this.txtPassword.TabIndex = 4;
             // 
             // cmbRole
             // 
             this.cmbRole.BackColor = System.Drawing.SystemColors.Menu;
             this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Location = new System.Drawing.Point(150, 173);
+            this.cmbRole.Location = new System.Drawing.Point(225, 266);
+            this.cmbRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(172, 21);
+            this.cmbRole.Size = new System.Drawing.Size(256, 28);
             this.cmbRole.TabIndex = 5;
             this.cmbRole.Text = "Add items: Admin , Staff ";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(389, 68);
+            this.btnAdd.Location = new System.Drawing.Point(584, 105);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(58, 18);
+            this.btnAdd.Size = new System.Drawing.Size(87, 28);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -112,9 +119,10 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(389, 121);
+            this.btnUpdate.Location = new System.Drawing.Point(584, 186);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 30);
+            this.btnUpdate.Size = new System.Drawing.Size(112, 46);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -122,9 +130,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(389, 178);
+            this.btnDelete.Location = new System.Drawing.Point(584, 274);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(58, 18);
+            this.btnDelete.Size = new System.Drawing.Size(87, 28);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -133,19 +142,21 @@
             // dgvUsers
             // 
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsers.Location = new System.Drawing.Point(76, 241);
+            this.dgvUsers.Location = new System.Drawing.Point(114, 343);
+            this.dgvUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvUsers.Name = "dgvUsers";
-            this.dgvUsers.Size = new System.Drawing.Size(371, 177);
+            this.dgvUsers.RowHeadersWidth = 62;
+            this.dgvUsers.Size = new System.Drawing.Size(917, 300);
             this.dgvUsers.TabIndex = 9;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             this.dgvUsers.SelectionChanged += new System.EventHandler(this.dgvUsers_SelectionChanged);
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.dgvUsers);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -156,6 +167,7 @@
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserForm";
             this.Text = "UserForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsers)).EndInit();

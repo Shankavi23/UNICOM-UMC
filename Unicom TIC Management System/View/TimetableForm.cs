@@ -16,6 +16,7 @@ namespace Unicom_TIC_Management_System.View
 {
     public partial class TimetableForm : Form
     {
+
         public TimetableForm()
         {
             InitializeComponent();

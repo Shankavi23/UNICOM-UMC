@@ -96,5 +96,9 @@ namespace Unicom_TIC_Management_System.View
             }
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

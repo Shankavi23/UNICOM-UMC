@@ -54,7 +54,7 @@ namespace Unicom_TIC_Management_System.View
             }
             else if (role == "Staff")
             {
-                
+                btnuser.Visible = false ;
             }
             else if (role == "Student")
             {
@@ -62,6 +62,8 @@ namespace Unicom_TIC_Management_System.View
                 button6.Visible = false;
                 btnuser.Visible = false;
                 button1.Visible = false;
+
+                
             }
         }
 

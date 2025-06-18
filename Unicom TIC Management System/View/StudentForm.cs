@@ -33,6 +33,7 @@ namespace Unicom_TIC_Management_System.View
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentForm));
             this.label1 = new System.Windows.Forms.Label();
             this.studentname = new System.Windows.Forms.Label();
             this.txtStudentName = new System.Windows.Forms.TextBox();
@@ -50,7 +51,7 @@ namespace Unicom_TIC_Management_System.View
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(156, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 20);
+            this.label1.Size = new System.Drawing.Size(10, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = " ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -61,9 +62,9 @@ namespace Unicom_TIC_Management_System.View
             this.studentname.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.studentname.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.studentname.Location = new System.Drawing.Point(174, 76);
+            this.studentname.Location = new System.Drawing.Point(87, 55);
             this.studentname.Name = "studentname";
-            this.studentname.Size = new System.Drawing.Size(167, 24);
+            this.studentname.Size = new System.Drawing.Size(120, 17);
             this.studentname.TabIndex = 1;
             this.studentname.Text = "Student Name";
             this.studentname.Click += new System.EventHandler(this.studentname_Click);
@@ -71,18 +72,18 @@ namespace Unicom_TIC_Management_System.View
             // txtStudentName
             // 
             this.txtStudentName.BackColor = System.Drawing.Color.White;
-            this.txtStudentName.Location = new System.Drawing.Point(370, 76);
+            this.txtStudentName.Location = new System.Drawing.Point(243, 53);
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(340, 26);
+            this.txtStudentName.Size = new System.Drawing.Size(254, 20);
             this.txtStudentName.TabIndex = 2;
             // 
             // cmbCourse
             // 
             this.cmbCourse.BackColor = System.Drawing.Color.White;
             this.cmbCourse.FormattingEnabled = true;
-            this.cmbCourse.Location = new System.Drawing.Point(370, 128);
+            this.cmbCourse.Location = new System.Drawing.Point(243, 103);
             this.cmbCourse.Name = "cmbCourse";
-            this.cmbCourse.Size = new System.Drawing.Size(340, 28);
+            this.cmbCourse.Size = new System.Drawing.Size(254, 21);
             this.cmbCourse.TabIndex = 3;
             // 
             // deletestudent
@@ -90,11 +91,11 @@ namespace Unicom_TIC_Management_System.View
             this.deletestudent.BackColor = System.Drawing.Color.DarkRed;
             this.deletestudent.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deletestudent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deletestudent.Location = new System.Drawing.Point(198, 202);
+            this.deletestudent.Location = new System.Drawing.Point(110, 156);
             this.deletestudent.Name = "deletestudent";
-            this.deletestudent.Size = new System.Drawing.Size(143, 31);
+            this.deletestudent.Size = new System.Drawing.Size(97, 31);
             this.deletestudent.TabIndex = 4;
-            this.deletestudent.Text = "DELETE STUDENT";
+            this.deletestudent.Text = "DELETE ";
             this.deletestudent.UseVisualStyleBackColor = false;
             this.deletestudent.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -103,9 +104,9 @@ namespace Unicom_TIC_Management_System.View
             this.Updatestudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Updatestudent.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Updatestudent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Updatestudent.Location = new System.Drawing.Point(384, 202);
+            this.Updatestudent.Location = new System.Drawing.Point(243, 156);
             this.Updatestudent.Name = "Updatestudent";
-            this.Updatestudent.Size = new System.Drawing.Size(137, 31);
+            this.Updatestudent.Size = new System.Drawing.Size(86, 31);
             this.Updatestudent.TabIndex = 5;
             this.Updatestudent.Text = "UPDATE";
             this.Updatestudent.UseVisualStyleBackColor = false;
@@ -113,12 +114,12 @@ namespace Unicom_TIC_Management_System.View
             // 
             // addstudent
             // 
-            this.addstudent.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.addstudent.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addstudent.BackColor = System.Drawing.Color.Teal;
+            this.addstudent.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addstudent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addstudent.Location = new System.Drawing.Point(568, 202);
+            this.addstudent.Location = new System.Drawing.Point(384, 156);
             this.addstudent.Name = "addstudent";
-            this.addstudent.Size = new System.Drawing.Size(124, 31);
+            this.addstudent.Size = new System.Drawing.Size(95, 31);
             this.addstudent.TabIndex = 6;
             this.addstudent.Text = "ADD";
             this.addstudent.UseVisualStyleBackColor = false;
@@ -127,10 +128,10 @@ namespace Unicom_TIC_Management_System.View
             // dgvstudents
             // 
             this.dgvstudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvstudents.Location = new System.Drawing.Point(128, 263);
+            this.dgvstudents.Location = new System.Drawing.Point(65, 202);
             this.dgvstudents.Name = "dgvstudents";
             this.dgvstudents.RowHeadersWidth = 62;
-            this.dgvstudents.Size = new System.Drawing.Size(582, 234);
+            this.dgvstudents.Size = new System.Drawing.Size(457, 159);
             this.dgvstudents.TabIndex = 7;
             this.dgvstudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvstudents_CellContentClick);
             this.dgvstudents.SelectionChanged += new System.EventHandler(this.dgvstudents_SelectionChanged);
@@ -141,15 +142,15 @@ namespace Unicom_TIC_Management_System.View
             this.Course.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Course.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Course.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Course.Location = new System.Drawing.Point(174, 132);
+            this.Course.Location = new System.Drawing.Point(84, 103);
             this.Course.Name = "Course";
-            this.Course.Size = new System.Drawing.Size(92, 24);
+            this.Course.Size = new System.Drawing.Size(66, 17);
             this.Course.TabIndex = 8;
             this.Course.Text = "Course";
             // 
             // StudentForm
             // 
-            this.ClientSize = new System.Drawing.Size(756, 575);
+            this.ClientSize = new System.Drawing.Size(618, 390);
             this.Controls.Add(this.Course);
             this.Controls.Add(this.dgvstudents);
             this.Controls.Add(this.addstudent);
@@ -159,6 +160,7 @@ namespace Unicom_TIC_Management_System.View
             this.Controls.Add(this.txtStudentName);
             this.Controls.Add(this.studentname);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StudentForm";
             this.Text = "StudentForm";
             this.Load += new System.EventHandler(this.StudentForm_Load);

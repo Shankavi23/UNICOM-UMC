@@ -91,12 +91,6 @@
     <Compile Include="View\ExamForm.Designer.cs">
       <DependentUpon>ExamForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\FrontForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FrontForm.Designer.cs">
-      <DependentUpon>FrontForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,9 +153,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ExamForm.resx">
       <DependentUpon>ExamForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FrontForm.resx">
-      <DependentUpon>FrontForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

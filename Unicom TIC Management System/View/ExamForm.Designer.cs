@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamForm));
             this.lblExamName = new System.Windows.Forms.Label();
             this.txtExamName = new System.Windows.Forms.TextBox();
             this.cmbSubjects = new System.Windows.Forms.ComboBox();
@@ -45,72 +46,72 @@
             this.lblExamName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblExamName.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExamName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblExamName.Location = new System.Drawing.Point(220, 73);
-            this.lblExamName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblExamName.Location = new System.Drawing.Point(147, 47);
             this.lblExamName.Name = "lblExamName";
-            this.lblExamName.Size = new System.Drawing.Size(98, 19);
+            this.lblExamName.Size = new System.Drawing.Size(68, 13);
             this.lblExamName.TabIndex = 0;
             this.lblExamName.Text = "Exam Name";
             // 
             // txtExamName
             // 
-            this.txtExamName.Location = new System.Drawing.Point(394, 69);
-            this.txtExamName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtExamName.Location = new System.Drawing.Point(263, 45);
             this.txtExamName.Name = "txtExamName";
-            this.txtExamName.Size = new System.Drawing.Size(276, 26);
+            this.txtExamName.Size = new System.Drawing.Size(185, 20);
             this.txtExamName.TabIndex = 1;
             // 
             // cmbSubjects
             // 
             this.cmbSubjects.FormattingEnabled = true;
-            this.cmbSubjects.Location = new System.Drawing.Point(394, 135);
-            this.cmbSubjects.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbSubjects.Location = new System.Drawing.Point(263, 88);
             this.cmbSubjects.Name = "cmbSubjects";
-            this.cmbSubjects.Size = new System.Drawing.Size(276, 28);
+            this.cmbSubjects.Size = new System.Drawing.Size(185, 21);
             this.cmbSubjects.TabIndex = 2;
             this.cmbSubjects.Text = "SubjectID + SubjectName";
             this.cmbSubjects.SelectedIndexChanged += new System.EventHandler(this.cmbSubjects_SelectedIndexChanged);
             // 
             // btnDeleteExam
             // 
-            this.btnDeleteExam.Location = new System.Drawing.Point(254, 210);
-            this.btnDeleteExam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDeleteExam.BackColor = System.Drawing.Color.Maroon;
+            this.btnDeleteExam.Location = new System.Drawing.Point(169, 136);
             this.btnDeleteExam.Name = "btnDeleteExam";
-            this.btnDeleteExam.Size = new System.Drawing.Size(105, 38);
+            this.btnDeleteExam.Size = new System.Drawing.Size(70, 25);
             this.btnDeleteExam.TabIndex = 3;
             this.btnDeleteExam.Text = "Delete";
-            this.btnDeleteExam.UseVisualStyleBackColor = true;
+            this.btnDeleteExam.UseVisualStyleBackColor = false;
+            this.btnDeleteExam.Click += new System.EventHandler(this.btnDeleteExam_Click);
             // 
             // btnUpdateExam
             // 
-            this.btnUpdateExam.Location = new System.Drawing.Point(420, 210);
-            this.btnUpdateExam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdateExam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnUpdateExam.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnUpdateExam.Location = new System.Drawing.Point(280, 136);
             this.btnUpdateExam.Name = "btnUpdateExam";
-            this.btnUpdateExam.Size = new System.Drawing.Size(105, 38);
+            this.btnUpdateExam.Size = new System.Drawing.Size(70, 25);
             this.btnUpdateExam.TabIndex = 4;
             this.btnUpdateExam.Text = "Update";
-            this.btnUpdateExam.UseVisualStyleBackColor = true;
+            this.btnUpdateExam.UseVisualStyleBackColor = false;
             this.btnUpdateExam.Click += new System.EventHandler(this.btnUpdateExam_Click);
             // 
             // btnAddExam
             // 
-            this.btnAddExam.Location = new System.Drawing.Point(565, 210);
-            this.btnAddExam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddExam.BackColor = System.Drawing.Color.Teal;
+            this.btnAddExam.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddExam.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAddExam.Location = new System.Drawing.Point(377, 136);
             this.btnAddExam.Name = "btnAddExam";
-            this.btnAddExam.Size = new System.Drawing.Size(105, 38);
+            this.btnAddExam.Size = new System.Drawing.Size(70, 25);
             this.btnAddExam.TabIndex = 5;
             this.btnAddExam.Text = "Add";
-            this.btnAddExam.UseVisualStyleBackColor = true;
+            this.btnAddExam.UseVisualStyleBackColor = false;
             this.btnAddExam.Click += new System.EventHandler(this.btnAddExam_Click);
             // 
             // dgvExams
             // 
             this.dgvExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExams.Location = new System.Drawing.Point(178, 306);
-            this.dgvExams.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvExams.Location = new System.Drawing.Point(119, 199);
             this.dgvExams.Name = "dgvExams";
             this.dgvExams.RowHeadersWidth = 62;
-            this.dgvExams.Size = new System.Drawing.Size(551, 217);
+            this.dgvExams.Size = new System.Drawing.Size(367, 141);
             this.dgvExams.TabIndex = 6;
             this.dgvExams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvExams.SelectionChanged += new System.EventHandler(this.dgvExams_SelectionChanged);
@@ -121,18 +122,17 @@
             this.lblSubjectID.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblSubjectID.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubjectID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSubjectID.Location = new System.Drawing.Point(221, 139);
-            this.lblSubjectID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSubjectID.Location = new System.Drawing.Point(147, 90);
             this.lblSubjectID.Name = "lblSubjectID";
-            this.lblSubjectID.Size = new System.Drawing.Size(97, 19);
+            this.lblSubjectID.Size = new System.Drawing.Size(66, 13);
             this.lblSubjectID.TabIndex = 7;
             this.lblSubjectID.Text = "Subject ID";
             // 
             // ExamForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 559);
+            this.ClientSize = new System.Drawing.Size(625, 363);
             this.Controls.Add(this.lblSubjectID);
             this.Controls.Add(this.dgvExams);
             this.Controls.Add(this.btnAddExam);
@@ -141,7 +141,7 @@
             this.Controls.Add(this.cmbSubjects);
             this.Controls.Add(this.txtExamName);
             this.Controls.Add(this.lblExamName);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ExamForm";
             this.Text = "ExamForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvExams)).EndInit();

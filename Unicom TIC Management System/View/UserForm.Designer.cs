@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
@@ -47,10 +48,9 @@
             this.lblUsername.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblUsername.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblUsername.Location = new System.Drawing.Point(106, 79);
-            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsername.Location = new System.Drawing.Point(71, 51);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(112, 21);
+            this.lblUsername.Size = new System.Drawing.Size(76, 14);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
             // 
@@ -60,10 +60,9 @@
             this.lblPassword.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPassword.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPassword.Location = new System.Drawing.Point(106, 146);
-            this.lblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassword.Location = new System.Drawing.Point(71, 95);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(99, 19);
+            this.lblPassword.Size = new System.Drawing.Size(72, 13);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Password";
             // 
@@ -73,39 +72,35 @@
             this.lblRole.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblRole.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRole.Location = new System.Drawing.Point(106, 208);
-            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRole.Location = new System.Drawing.Point(71, 135);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(52, 19);
+            this.lblRole.Size = new System.Drawing.Size(38, 13);
             this.lblRole.TabIndex = 2;
             this.lblRole.Text = "Role";
             // 
             // txtusername
             // 
             this.txtusername.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtusername.Location = new System.Drawing.Point(237, 79);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtusername.Location = new System.Drawing.Point(158, 51);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(317, 26);
+            this.txtusername.Size = new System.Drawing.Size(213, 20);
             this.txtusername.TabIndex = 3;
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.txtPassword.Location = new System.Drawing.Point(225, 140);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Location = new System.Drawing.Point(150, 91);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(329, 26);
+            this.txtPassword.Size = new System.Drawing.Size(221, 20);
             this.txtPassword.TabIndex = 4;
             // 
             // cmbRole
             // 
             this.cmbRole.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Location = new System.Drawing.Point(225, 212);
-            this.cmbRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbRole.Location = new System.Drawing.Point(150, 138);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(329, 28);
+            this.cmbRole.Size = new System.Drawing.Size(221, 21);
             this.cmbRole.TabIndex = 5;
             this.cmbRole.Text = "Add items: Admin , Staff ";
             this.cmbRole.SelectedIndexChanged += new System.EventHandler(this.cmbRole_SelectedIndexChanged);
@@ -115,10 +110,9 @@
             this.btnAdd.BackColor = System.Drawing.Color.Teal;
             this.btnAdd.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAdd.Location = new System.Drawing.Point(608, 75);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAdd.Location = new System.Drawing.Point(405, 49);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(113, 35);
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -129,10 +123,9 @@
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnUpdate.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdate.Location = new System.Drawing.Point(608, 135);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUpdate.Location = new System.Drawing.Point(405, 88);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(112, 37);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 24);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -143,10 +136,9 @@
             this.btnDelete.BackColor = System.Drawing.Color.Maroon;
             this.btnDelete.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDelete.Location = new System.Drawing.Point(608, 206);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDelete.Location = new System.Drawing.Point(405, 134);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(113, 34);
+            this.btnDelete.Size = new System.Drawing.Size(75, 22);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -155,21 +147,20 @@
             // dgvUsers
             // 
             this.dgvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsers.Location = new System.Drawing.Point(79, 285);
-            this.dgvUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvUsers.Location = new System.Drawing.Point(53, 185);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.RowHeadersWidth = 62;
-            this.dgvUsers.Size = new System.Drawing.Size(684, 218);
+            this.dgvUsers.Size = new System.Drawing.Size(456, 142);
             this.dgvUsers.TabIndex = 9;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             this.dgvUsers.SelectionChanged += new System.EventHandler(this.dgvUsers_SelectionChanged);
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(937, 571);
+            this.ClientSize = new System.Drawing.Size(625, 371);
             this.Controls.Add(this.dgvUsers);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -180,7 +171,7 @@
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserForm";
             this.Text = "UserForm";
             this.Load += new System.EventHandler(this.UserForm_Load);

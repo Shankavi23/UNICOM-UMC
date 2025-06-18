@@ -19,6 +19,7 @@ namespace Unicom_TIC_Management_System.View
         public RoomForm()
         {
             InitializeComponent();
+            cmbRoomType.Items.AddRange(new string[] { "Lecture Hall" , "Mini Lab 01" , "Main Lab" , "Mini lab2" , "StaffRoom" , "OfficeRoom"});
             LoadRooms();
         }
 
@@ -66,40 +67,42 @@ namespace Unicom_TIC_Management_System.View
         {
 
             {
-                // Validate room name
+
                 if (string.IsNullOrWhiteSpace(txtRoomName.Text))
                 {
                     MessageBox.Show("Please enter a Room Name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Optionally use a dropdown or set a default type
-                string roomType = "Classroom"; // You can change this or get it from a ComboBox
+                if (cmbRoomType.SelectedItem == null)
+                {
+                    MessageBox.Show("Please select a Room Type.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-                // Create new Room object
+                string roomType = cmbRoomType.SelectedItem.ToString();
+
                 Room room = new Room
                 {
                     RoomName = txtRoomName.Text.Trim(),
                     RoomType = roomType
                 };
 
-                // Add to database using controller
                 try
                 {
                     RoomController roomController = new RoomController();
                     roomController.Create(room);
                     MessageBox.Show("Room added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Clear input and refresh DataGridView
                     txtRoomName.Clear();
-                    LoadRooms(); // You should define this method to reload dgvRooms
+                    cmbRoomType.SelectedIndex = 0; // Reset selection
+                    LoadRooms();
                     ClearFields();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error adding room: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
 
             }
 
@@ -114,6 +117,7 @@ namespace Unicom_TIC_Management_System.View
 
             // Optional: auto-size columns for better appearance
             dgvRooms.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
         }
 
         private void ClearFields()
@@ -174,6 +178,11 @@ namespace Unicom_TIC_Management_System.View
         }
 
         private void cmbRoomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RoomForm_Load(object sender, EventArgs e)
         {
 
         }

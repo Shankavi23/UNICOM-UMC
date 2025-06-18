@@ -70,28 +70,28 @@
             // 
             // txtStudent
             // 
-            this.txtStudent.Location = new System.Drawing.Point(176, 68);
+            this.txtStudent.Location = new System.Drawing.Point(259, 69);
             this.txtStudent.Name = "txtStudent";
             this.txtStudent.Size = new System.Drawing.Size(100, 26);
             this.txtStudent.TabIndex = 3;
             // 
             // txtExamID
             // 
-            this.txtExamID.Location = new System.Drawing.Point(176, 128);
+            this.txtExamID.Location = new System.Drawing.Point(259, 129);
             this.txtExamID.Name = "txtExamID";
             this.txtExamID.Size = new System.Drawing.Size(100, 26);
             this.txtExamID.TabIndex = 4;
             // 
             // txtScore
             // 
-            this.txtScore.Location = new System.Drawing.Point(176, 191);
+            this.txtScore.Location = new System.Drawing.Point(259, 185);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(100, 26);
             this.txtScore.TabIndex = 5;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(321, 68);
+            this.btnAdd.Location = new System.Drawing.Point(513, 43);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 6;
@@ -101,7 +101,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(321, 134);
+            this.btnUpdate.Location = new System.Drawing.Point(513, 104);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 7;
@@ -111,7 +111,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(321, 191);
+            this.btnDelete.Location = new System.Drawing.Point(513, 194);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 8;
@@ -122,12 +122,11 @@
             // gridMark
             // 
             this.gridMark.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridMark.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gridMark.Location = new System.Drawing.Point(418, 0);
+            this.gridMark.Location = new System.Drawing.Point(63, 247);
             this.gridMark.Name = "gridMark";
             this.gridMark.RowHeadersWidth = 62;
             this.gridMark.RowTemplate.Height = 28;
-            this.gridMark.Size = new System.Drawing.Size(647, 560);
+            this.gridMark.Size = new System.Drawing.Size(565, 295);
             this.gridMark.TabIndex = 9;
             this.gridMark.SelectionChanged += new System.EventHandler(this.gridMark_SelectionChanged);
             // 
@@ -135,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 560);
+            this.ClientSize = new System.Drawing.Size(756, 569);
             this.Controls.Add(this.gridMark);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -148,6 +147,7 @@
             this.Controls.Add(this.Label);
             this.Name = "MarkForm";
             this.Text = "MarkForm";
+            this.Load += new System.EventHandler(this.MarkForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridMark)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

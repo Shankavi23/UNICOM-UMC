@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Unicom_TIC_Management_System.Controller;
 using Unicom_TIC_Management_System.Models;
 
+
 namespace Unicom_TIC_Management_System.View
 {
     public partial class MarkForm : Form
@@ -19,7 +20,7 @@ namespace Unicom_TIC_Management_System.View
             InitializeComponent();
             LoadMarks();
         }
-        MarkController marks = new MarkController();
+        MarkController controller = new MarkController();
         private  void LoadMarks()
         {
             MarkController markController = new MarkController();
@@ -31,6 +32,7 @@ namespace Unicom_TIC_Management_System.View
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Mark mark = new Mark
@@ -41,8 +43,7 @@ namespace Unicom_TIC_Management_System.View
                 };
 
                 MarkController controller = new MarkController();
-                var marks = controller.GetAllMarks();   // ✅ No error
-                controller.DeleteMark(5);               // ✅ No error
+                controller.AddMark(mark); // ✅ ADD instead of DELETE
 
                 LoadMarks();
                 ClearInputs();
@@ -58,13 +59,29 @@ namespace Unicom_TIC_Management_System.View
         {
             if (gridMark.CurrentRow != null)
             {
-                int markId = Convert.ToInt32(gridMark.CurrentRow.Cells["MarkID"].Value);
-                MarkController markController = new MarkController();
-                markController.DeleteMark(5); // ✅
+                try
+                {
+                    int markId = Convert.ToInt32(gridMark.CurrentRow.Cells["MarkID"].Value);
 
-                LoadMarks();
-                ClearInputs();
-                MessageBox.Show("Mark deleted successfully!");
+                    Mark updatedMark = new Mark
+                    {
+                        MarkID = markId,
+                        StudentID = int.Parse(txtStudent.Text),
+                        ExamID = int.Parse(txtExamID.Text),
+                        Score = int.Parse(txtScore.Text)
+                    };
+
+                    MarkController markController = new MarkController();
+                    markController.UpdateMark(updatedMark); // ✅ Pass the mark object
+
+                    LoadMarks();
+                    ClearInputs();
+                    MessageBox.Show("Mark updated successfully!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Update failed: " + ex.Message);
+                }
             }
         }
 
@@ -86,8 +103,32 @@ namespace Unicom_TIC_Management_System.View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            MarkController markController = new MarkController();
-            markController.DeleteMark(5); // ✅
+            if (gridMark.CurrentRow != null)
+            {
+                try
+                {
+                    int markId = Convert.ToInt32(gridMark.CurrentRow.Cells["MarkID"].Value);
+
+                    MarkController markController = new MarkController();
+                    markController.DeleteMark(markId); // ✅ delete selected mark
+
+                    LoadMarks();
+                    ClearInputs();
+                    MessageBox.Show("Mark deleted successfully!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Delete failed: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a mark to delete.");
+            }
+        }
+
+        private void MarkForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

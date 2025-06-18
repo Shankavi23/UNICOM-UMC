@@ -128,6 +128,16 @@ namespace Unicom_TIC_Management_System.View
             LoadSubjects();
             ClearFields();
         }
+
+        private void lblSubjectName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubjectForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
         
     

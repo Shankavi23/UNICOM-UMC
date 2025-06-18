@@ -86,15 +86,15 @@ namespace Unicom_TIC_Management_System.Controller
         {
             using (var conn = DbConfig.GetConnection())
             {
-                string query = "UPDATE Mark SET StudentID = @StudentID, ExamID = @ExamID, Score = @Score WHERE MarkID = @MarkID";
-                using (var cmd = new SQLiteCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@StudentID", mark.StudentID);
-                    cmd.Parameters.AddWithValue("@ExamID", mark.ExamID);
-                    cmd.Parameters.AddWithValue("@Score", mark.Score);
-                    cmd.Parameters.AddWithValue("@MarkID", mark.MarkID);
-                    cmd.ExecuteNonQuery();
-                }
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE Mark SET StudentID = @StudentID, ExamID = @ExamID, Score = @Score WHERE MarkID = @MarkID";
+
+                cmd.Parameters.AddWithValue("@StudentID", mark.StudentID);
+                cmd.Parameters.AddWithValue("@ExamID", mark.ExamID);
+                cmd.Parameters.AddWithValue("@Score", mark.Score);
+                cmd.Parameters.AddWithValue("@MarkID", mark.MarkID);
+
+                cmd.ExecuteNonQuery();
             }
         }
 

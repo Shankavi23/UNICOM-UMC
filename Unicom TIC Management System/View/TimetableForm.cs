@@ -32,7 +32,7 @@ namespace Unicom_TIC_Management_System.View
 
         private void dgvTimetable_systemchanged(object sender, EventArgs e)
         {
-            if (dgvTimetable.SelectedRows.Count > 0)
+            if(dgvTimetable.SelectedRows.Count > 0)
             {
                 var row = dgvTimetable.SelectedRows[0];
                 selectedID = Convert.ToInt32(row.Cells["TimetableID"].Value);
@@ -176,6 +176,11 @@ namespace Unicom_TIC_Management_System.View
             cmbRoom.SelectedIndex = -1;
             txtTimeSlot.Clear();
             selectedID = -1;
+        }
+
+        private void cmbRoom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

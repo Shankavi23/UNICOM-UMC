@@ -39,29 +39,36 @@
             // 
             // txtCourseName
             // 
-            this.txtCourseName.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtCourseName.Location = new System.Drawing.Point(323, 82);
+            this.txtCourseName.BackColor = System.Drawing.Color.White;
+            this.txtCourseName.Location = new System.Drawing.Point(352, 83);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(204, 20);
+            this.txtCourseName.Size = new System.Drawing.Size(356, 26);
             this.txtCourseName.TabIndex = 0;
             this.txtCourseName.TextChanged += new System.EventHandler(this.txtCourseName_TextChanged);
             // 
             // view_all_course
             // 
+            this.view_all_course.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.view_all_course.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_all_course.Location = new System.Drawing.Point(204, 195);
+            this.view_all_course.Location = new System.Drawing.Point(160, 201);
+            this.view_all_course.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.view_all_course.Name = "view_all_course";
-            this.view_all_course.Size = new System.Drawing.Size(365, 150);
+            this.view_all_course.RowHeadersWidth = 62;
+            this.view_all_course.Size = new System.Drawing.Size(548, 270);
             this.view_all_course.TabIndex = 1;
             this.view_all_course.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_all_course_CellContentClick);
             this.view_all_course.SelectionChanged += new System.EventHandler(this.view_all_course_SelectionChanged);
             // 
             // add
             // 
-            this.add.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.add.Location = new System.Drawing.Point(452, 139);
+            this.add.BackColor = System.Drawing.Color.RoyalBlue;
+            this.add.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.add.Location = new System.Drawing.Point(536, 139);
+            this.add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.Size = new System.Drawing.Size(112, 35);
             this.add.TabIndex = 2;
             this.add.Text = "ADD";
             this.add.UseVisualStyleBackColor = false;
@@ -69,10 +76,13 @@
             // 
             // update
             // 
-            this.update.BackColor = System.Drawing.Color.Moccasin;
-            this.update.Location = new System.Drawing.Point(342, 139);
+            this.update.BackColor = System.Drawing.Color.Orange;
+            this.update.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.update.Location = new System.Drawing.Point(381, 139);
+            this.update.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(75, 23);
+            this.update.Size = new System.Drawing.Size(112, 35);
             this.update.TabIndex = 3;
             this.update.Text = "UPDATE";
             this.update.UseVisualStyleBackColor = false;
@@ -80,10 +90,13 @@
             // 
             // delete
             // 
-            this.delete.BackColor = System.Drawing.Color.Salmon;
-            this.delete.Location = new System.Drawing.Point(233, 139);
+            this.delete.BackColor = System.Drawing.Color.Brown;
+            this.delete.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.delete.Location = new System.Drawing.Point(231, 139);
+            this.delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.Size = new System.Drawing.Size(112, 35);
             this.delete.TabIndex = 4;
             this.delete.Text = "DELETE";
             this.delete.UseVisualStyleBackColor = false;
@@ -92,24 +105,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Location = new System.Drawing.Point(230, 85);
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(167, 84);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.Size = new System.Drawing.Size(155, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Course Name: ";
             // 
             // courseForm1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 487);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(923, 510);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.update);
             this.Controls.Add(this.add);
             this.Controls.Add(this.view_all_course);
             this.Controls.Add(this.txtCourseName);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "courseForm1";
             this.Text = "courseForm1";
             ((System.ComponentModel.ISupportInitialize)(this.view_all_course)).EndInit();

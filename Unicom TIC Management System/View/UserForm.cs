@@ -135,5 +135,15 @@ namespace Unicom_TIC_Management_System.View
                 cmbRole.Text = dgvUsers.Rows[e.RowIndex].Cells[3].Value.ToString();
             }
         }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

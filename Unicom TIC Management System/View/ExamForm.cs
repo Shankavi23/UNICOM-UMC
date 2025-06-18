@@ -19,7 +19,7 @@ namespace Unicom_TIC_Management_System.View
         {
             InitializeComponent();
             LoadExams();
-            cmbSubjects.Items.AddRange(new string[] { "Subject_01", "Subject_02" , "Subject_03" , "Software" , "GIT" });
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -117,20 +117,42 @@ namespace Unicom_TIC_Management_System.View
 
         private void cmbSubjects_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbSubjects.SelectedItem != null)
+            if (dgvExams.CurrentRow != null)
             {
-                var selectedSubject = cmbSubjects.SelectedItem as Subject;
-                if (selectedSubject != null)
+                txtExamName.Text = dgvExams.CurrentRow.Cells["ExamName"].Value.ToString();
+
+                if (int.TryParse(dgvExams.CurrentRow.Cells["SubjectID"].Value.ToString(), out int selectedSubjectId))
                 {
-                    txtExamName.Text = selectedSubject.SubjectName;
-                    // or use selectedSubject.SubjectID
+                    cmbSubjects.SelectedValue = selectedSubjectId;
                 }
             }
         }
 
         private void btnDeleteExam_Click(object sender, EventArgs e)
         {
+            if (dgvExams.CurrentRow == null)
+            {
+                MessageBox.Show("Please select an exam to delete.", "Delete Exam", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            DialogResult confirm = MessageBox.Show("Are you sure you want to delete this exam?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (confirm == DialogResult.Yes)
+            {
+                int examId = Convert.ToInt32(dgvExams.CurrentRow.Cells["ExamID"].Value);
+
+                try
+                {
+                    examController.Delete(examId);
+                    MessageBox.Show("Exam deleted successfully.");
+                    LoadExams();
+                    ClearForm();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error deleting exam: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

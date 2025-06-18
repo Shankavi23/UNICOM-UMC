@@ -45,7 +45,7 @@
             // Label
             // 
             this.Label.AutoSize = true;
-            this.Label.Location = new System.Drawing.Point(39, 49);
+            this.Label.Location = new System.Drawing.Point(56, 39);
             this.Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label.Name = "Label";
             this.Label.Size = new System.Drawing.Size(44, 13);
@@ -75,7 +75,7 @@
             // txtStudent
             // 
             this.txtStudent.Location = new System.Drawing.Point(173, 45);
-            this.txtStudent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStudent.Margin = new System.Windows.Forms.Padding(2);
             this.txtStudent.Name = "txtStudent";
             this.txtStudent.Size = new System.Drawing.Size(68, 20);
             this.txtStudent.TabIndex = 3;
@@ -83,7 +83,7 @@
             // txtExamID
             // 
             this.txtExamID.Location = new System.Drawing.Point(173, 84);
-            this.txtExamID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtExamID.Margin = new System.Windows.Forms.Padding(2);
             this.txtExamID.Name = "txtExamID";
             this.txtExamID.Size = new System.Drawing.Size(68, 20);
             this.txtExamID.TabIndex = 4;
@@ -91,7 +91,7 @@
             // txtScore
             // 
             this.txtScore.Location = new System.Drawing.Point(173, 120);
-            this.txtScore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtScore.Margin = new System.Windows.Forms.Padding(2);
             this.txtScore.Name = "txtScore";
             this.txtScore.Size = new System.Drawing.Size(68, 20);
             this.txtScore.TabIndex = 5;
@@ -99,9 +99,9 @@
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(342, 28);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 15);
+            this.btnAdd.Size = new System.Drawing.Size(66, 34);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add\n";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(342, 68);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(50, 15);
             this.btnUpdate.TabIndex = 7;
@@ -121,7 +121,7 @@
             // btnDelete
             // 
             this.btnDelete.Location = new System.Drawing.Point(342, 126);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(50, 15);
             this.btnDelete.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             this.gridMark.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridMark.Location = new System.Drawing.Point(42, 161);
-            this.gridMark.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridMark.Margin = new System.Windows.Forms.Padding(2);
             this.gridMark.Name = "gridMark";
             this.gridMark.RowHeadersWidth = 62;
             this.gridMark.RowTemplate.Height = 28;
@@ -145,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 370);
+            this.ClientSize = new System.Drawing.Size(607, 374);
             this.Controls.Add(this.gridMark);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -157,7 +157,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Label);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MarkForm";
             this.Text = "MarkForm";
             this.Load += new System.EventHandler(this.MarkForm_Load);

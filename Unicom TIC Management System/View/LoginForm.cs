@@ -100,5 +100,10 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -183,6 +183,11 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     }

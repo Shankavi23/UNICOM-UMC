@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 382);
+            this.ClientSize = new System.Drawing.Size(606, 371);
             this.Controls.Add(this.dgvRooms);
             this.Controls.Add(this.btnAddRoom);
             this.Controls.Add(this.btnUpdateRoom);

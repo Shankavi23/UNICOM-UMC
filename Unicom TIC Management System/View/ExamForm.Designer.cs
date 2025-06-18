@@ -37,7 +37,10 @@
             this.btnAddExam = new System.Windows.Forms.Button();
             this.dgvExams = new System.Windows.Forms.DataGridView();
             this.lblSubjectID = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExams)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblExamName
@@ -46,7 +49,7 @@
             this.lblExamName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblExamName.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExamName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblExamName.Location = new System.Drawing.Point(147, 47);
+            this.lblExamName.Location = new System.Drawing.Point(147, 52);
             this.lblExamName.Name = "lblExamName";
             this.lblExamName.Size = new System.Drawing.Size(68, 13);
             this.lblExamName.TabIndex = 0;
@@ -54,17 +57,18 @@
             // 
             // txtExamName
             // 
-            this.txtExamName.Location = new System.Drawing.Point(263, 45);
+            this.txtExamName.Location = new System.Drawing.Point(280, 43);
             this.txtExamName.Name = "txtExamName";
-            this.txtExamName.Size = new System.Drawing.Size(185, 20);
+            this.txtExamName.Size = new System.Drawing.Size(247, 20);
             this.txtExamName.TabIndex = 1;
             // 
             // cmbSubjects
             // 
+            this.cmbSubjects.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSubjects.FormattingEnabled = true;
-            this.cmbSubjects.Location = new System.Drawing.Point(263, 88);
+            this.cmbSubjects.Location = new System.Drawing.Point(280, 82);
             this.cmbSubjects.Name = "cmbSubjects";
-            this.cmbSubjects.Size = new System.Drawing.Size(185, 21);
+            this.cmbSubjects.Size = new System.Drawing.Size(247, 21);
             this.cmbSubjects.TabIndex = 2;
             this.cmbSubjects.Text = "SubjectID + SubjectName";
             this.cmbSubjects.SelectedIndexChanged += new System.EventHandler(this.cmbSubjects_SelectedIndexChanged);
@@ -72,7 +76,9 @@
             // btnDeleteExam
             // 
             this.btnDeleteExam.BackColor = System.Drawing.Color.Maroon;
-            this.btnDeleteExam.Location = new System.Drawing.Point(169, 136);
+            this.btnDeleteExam.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteExam.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDeleteExam.Location = new System.Drawing.Point(280, 126);
             this.btnDeleteExam.Name = "btnDeleteExam";
             this.btnDeleteExam.Size = new System.Drawing.Size(70, 25);
             this.btnDeleteExam.TabIndex = 3;
@@ -83,8 +89,9 @@
             // btnUpdateExam
             // 
             this.btnUpdateExam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnUpdateExam.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateExam.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdateExam.Location = new System.Drawing.Point(280, 136);
+            this.btnUpdateExam.Location = new System.Drawing.Point(372, 126);
             this.btnUpdateExam.Name = "btnUpdateExam";
             this.btnUpdateExam.Size = new System.Drawing.Size(70, 25);
             this.btnUpdateExam.TabIndex = 4;
@@ -97,7 +104,7 @@
             this.btnAddExam.BackColor = System.Drawing.Color.Teal;
             this.btnAddExam.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddExam.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAddExam.Location = new System.Drawing.Point(377, 136);
+            this.btnAddExam.Location = new System.Drawing.Point(457, 126);
             this.btnAddExam.Name = "btnAddExam";
             this.btnAddExam.Size = new System.Drawing.Size(70, 25);
             this.btnAddExam.TabIndex = 5;
@@ -108,10 +115,10 @@
             // dgvExams
             // 
             this.dgvExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvExams.Location = new System.Drawing.Point(119, 199);
+            this.dgvExams.Location = new System.Drawing.Point(117, 177);
             this.dgvExams.Name = "dgvExams";
             this.dgvExams.RowHeadersWidth = 62;
-            this.dgvExams.Size = new System.Drawing.Size(367, 141);
+            this.dgvExams.Size = new System.Drawing.Size(459, 164);
             this.dgvExams.TabIndex = 6;
             this.dgvExams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvExams.SelectionChanged += new System.EventHandler(this.dgvExams_SelectionChanged);
@@ -128,11 +135,33 @@
             this.lblSubjectID.TabIndex = 7;
             this.lblSubjectID.Text = "Subject ID";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Exam Detiles";
+            // 
             // ExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 363);
+            this.ClientSize = new System.Drawing.Size(606, 371);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblSubjectID);
             this.Controls.Add(this.dgvExams);
             this.Controls.Add(this.btnAddExam);
@@ -145,6 +174,7 @@
             this.Name = "ExamForm";
             this.Text = "ExamForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvExams)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +190,7 @@
         private System.Windows.Forms.Button btnAddExam;
         private System.Windows.Forms.DataGridView dgvExams;
         private System.Windows.Forms.Label lblSubjectID;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -150,7 +150,7 @@ namespace Unicom_TIC_Management_System.View
             // 
             // StudentForm
             // 
-            this.ClientSize = new System.Drawing.Size(618, 390);
+            this.ClientSize = new System.Drawing.Size(606, 370);
             this.Controls.Add(this.Course);
             this.Controls.Add(this.dgvstudents);
             this.Controls.Add(this.addstudent);
@@ -196,7 +196,7 @@ namespace Unicom_TIC_Management_System.View
             var confirm = MessageBox.Show("Are you sure to delete this user?", "Confirm", MessageBoxButtons.YesNo);
             if (confirm == DialogResult.Yes)
             {
-                UserController.DeleteUser(selectedStudentID);
+                StudentController.DeleteStudent(selectedStudentID);
                 LoadStudents();
                 ClearInputs();
             }

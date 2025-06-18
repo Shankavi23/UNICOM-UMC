@@ -35,15 +35,18 @@
             this.update = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.view_all_course)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCourseName
             // 
             this.txtCourseName.BackColor = System.Drawing.Color.White;
-            this.txtCourseName.Location = new System.Drawing.Point(235, 54);
+            this.txtCourseName.Location = new System.Drawing.Point(270, 51);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(239, 20);
+            this.txtCourseName.Size = new System.Drawing.Size(301, 20);
             this.txtCourseName.TabIndex = 0;
             this.txtCourseName.TextChanged += new System.EventHandler(this.txtCourseName_TextChanged);
             // 
@@ -51,10 +54,10 @@
             // 
             this.view_all_course.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.view_all_course.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_all_course.Location = new System.Drawing.Point(107, 131);
+            this.view_all_course.Location = new System.Drawing.Point(117, 156);
             this.view_all_course.Name = "view_all_course";
             this.view_all_course.RowHeadersWidth = 62;
-            this.view_all_course.Size = new System.Drawing.Size(365, 176);
+            this.view_all_course.Size = new System.Drawing.Size(454, 176);
             this.view_all_course.TabIndex = 1;
             this.view_all_course.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_all_course_CellContentClick);
             this.view_all_course.SelectionChanged += new System.EventHandler(this.view_all_course_SelectionChanged);
@@ -62,9 +65,9 @@
             // add
             // 
             this.add.BackColor = System.Drawing.Color.Teal;
-            this.add.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.add.Location = new System.Drawing.Point(357, 90);
+            this.add.Location = new System.Drawing.Point(496, 105);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 23);
             this.add.TabIndex = 2;
@@ -75,9 +78,9 @@
             // update
             // 
             this.update.BackColor = System.Drawing.Color.Orange;
-            this.update.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.update.Location = new System.Drawing.Point(254, 90);
+            this.update.Location = new System.Drawing.Point(393, 105);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(75, 23);
             this.update.TabIndex = 3;
@@ -88,9 +91,9 @@
             // delete
             // 
             this.delete.BackColor = System.Drawing.Color.Brown;
-            this.delete.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.delete.Location = new System.Drawing.Point(154, 90);
+            this.delete.Location = new System.Drawing.Point(270, 105);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 23);
             this.delete.TabIndex = 4;
@@ -104,18 +107,41 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Stencil", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(111, 55);
+            this.label1.Location = new System.Drawing.Point(123, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 17);
             this.label1.TabIndex = 5;
             this.label1.Text = "Course Name: ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(61, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Course Menu";
             // 
             // courseForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(615, 332);
+            this.ClientSize = new System.Drawing.Size(605, 367);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.update);
@@ -126,6 +152,7 @@
             this.Name = "courseForm1";
             this.Text = "courseForm1";
             ((System.ComponentModel.ISupportInitialize)(this.view_all_course)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,5 +166,7 @@
         private System.Windows.Forms.Button update;
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

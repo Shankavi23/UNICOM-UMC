@@ -19,7 +19,9 @@ namespace Unicom_TIC_Management_System.View
         {
             InitializeComponent();
             LoadExams();
-            
+            LoadSubjects();
+
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -29,6 +31,7 @@ namespace Unicom_TIC_Management_System.View
 
         private void dgvExams_SelectionChanged(object sender, EventArgs e)
         {
+
             if (dgvExams.CurrentRow != null)
             {
                 txtExamName.Text = dgvExams.CurrentRow.Cells["ExamName"].Value.ToString();
@@ -89,7 +92,7 @@ namespace Unicom_TIC_Management_System.View
             };
 
             ExamController ExamController = new ExamController();
-            bool updated = ExamController.Update(exam);
+            bool updated = examController.Update(exam);
             MessageBox.Show(updated ? "Exam updated!" : "Update failed.");
             LoadExams();
             ClearForm();
@@ -111,7 +114,7 @@ namespace Unicom_TIC_Management_System.View
         private void LoadExams()
         {
             ExamController ExamController = new ExamController();
-            var exams = ExamController.GetAll();
+            var exams = examController.GetAll();
             dgvExams.DataSource = exams;
         }
 

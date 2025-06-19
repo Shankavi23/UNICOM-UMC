@@ -19,9 +19,9 @@ namespace Unicom_TIC_Management_System.View
         {
             InitializeComponent();
             LoadCourses();
-         }
+        }
 
-        
+
 
         private void LoadCourses()
         {
@@ -143,7 +143,7 @@ namespace Unicom_TIC_Management_System.View
                     if (deleted)
                     {
                         MessageBox.Show("Course deleted successfully.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadCourses(); 
+                        LoadCourses();
                         txtCourseName.Clear();
                     }
                     else
@@ -167,6 +167,11 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void courseForm1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-    
+
 }

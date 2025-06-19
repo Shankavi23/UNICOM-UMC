@@ -51,9 +51,10 @@
             this.Label.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Label.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Label.Location = new System.Drawing.Point(232, 61);
+            this.Label.Location = new System.Drawing.Point(155, 25);
+            this.Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(79, 19);
+            this.Label.Size = new System.Drawing.Size(54, 13);
             this.Label.TabIndex = 0;
             this.Label.Text = "Student";
             // 
@@ -63,9 +64,10 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(228, 117);
+            this.label2.Location = new System.Drawing.Point(152, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 19);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Exam ID:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -76,31 +78,38 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(232, 168);
+            this.label3.Location = new System.Drawing.Point(155, 104);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 21);
+            this.label3.Size = new System.Drawing.Size(48, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "Score:";
             // 
             // txtStudent
             // 
-            this.txtStudent.Location = new System.Drawing.Point(377, 57);
+            this.txtStudent.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStudent.Location = new System.Drawing.Point(251, 21);
+            this.txtStudent.Margin = new System.Windows.Forms.Padding(2);
             this.txtStudent.Name = "txtStudent";
-            this.txtStudent.Size = new System.Drawing.Size(449, 26);
+            this.txtStudent.Size = new System.Drawing.Size(301, 21);
             this.txtStudent.TabIndex = 3;
             // 
             // txtExamID
             // 
-            this.txtExamID.Location = new System.Drawing.Point(377, 113);
+            this.txtExamID.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExamID.Location = new System.Drawing.Point(251, 61);
+            this.txtExamID.Margin = new System.Windows.Forms.Padding(2);
             this.txtExamID.Name = "txtExamID";
-            this.txtExamID.Size = new System.Drawing.Size(449, 26);
+            this.txtExamID.Size = new System.Drawing.Size(301, 21);
             this.txtExamID.TabIndex = 4;
             // 
             // txtScore
             // 
-            this.txtScore.Location = new System.Drawing.Point(377, 165);
+            this.txtScore.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtScore.Location = new System.Drawing.Point(251, 103);
+            this.txtScore.Margin = new System.Windows.Forms.Padding(2);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(449, 26);
+            this.txtScore.Size = new System.Drawing.Size(301, 21);
             this.txtScore.TabIndex = 5;
             this.txtScore.TextChanged += new System.EventHandler(this.txtScore_TextChanged);
             // 
@@ -109,9 +118,10 @@
             this.btnAdd.BackColor = System.Drawing.Color.Teal;
             this.btnAdd.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAdd.Location = new System.Drawing.Point(676, 210);
+            this.btnAdd.Location = new System.Drawing.Point(248, 140);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(101, 37);
+            this.btnAdd.Size = new System.Drawing.Size(67, 24);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add\n";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -119,12 +129,13 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnUpdate.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdate.Location = new System.Drawing.Point(526, 210);
+            this.btnUpdate.Location = new System.Drawing.Point(364, 140);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(101, 36);
+            this.btnUpdate.Size = new System.Drawing.Size(67, 23);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -135,9 +146,10 @@
             this.btnDelete.BackColor = System.Drawing.Color.Maroon;
             this.btnDelete.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDelete.Location = new System.Drawing.Point(377, 210);
+            this.btnDelete.Location = new System.Drawing.Point(484, 139);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(101, 35);
+            this.btnDelete.Size = new System.Drawing.Size(67, 23);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -145,12 +157,14 @@
             // 
             // gridMark
             // 
+            this.gridMark.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.gridMark.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridMark.Location = new System.Drawing.Point(203, 274);
+            this.gridMark.Location = new System.Drawing.Point(155, 181);
+            this.gridMark.Margin = new System.Windows.Forms.Padding(2);
             this.gridMark.Name = "gridMark";
             this.gridMark.RowHeadersWidth = 62;
             this.gridMark.RowTemplate.Height = 28;
-            this.gridMark.Size = new System.Drawing.Size(637, 268);
+            this.gridMark.Size = new System.Drawing.Size(425, 182);
             this.gridMark.TabIndex = 9;
             this.gridMark.SelectionChanged += new System.EventHandler(this.gridMark_SelectionChanged);
             // 
@@ -158,9 +172,10 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 103);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -169,17 +184,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 139);
+            this.label1.Location = new System.Drawing.Point(8, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 19);
+            this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Marks Details";
             // 
             // MarkForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 575);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(610, 369);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gridMark);
@@ -193,6 +210,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Label);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MarkForm";
             this.Text = "MarkForm";
             this.Load += new System.EventHandler(this.MarkForm_Load);

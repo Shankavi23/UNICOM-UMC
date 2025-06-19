@@ -148,7 +148,12 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void cmbCourseID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-        
-    
+
+
 }

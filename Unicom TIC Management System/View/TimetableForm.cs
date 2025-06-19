@@ -33,7 +33,7 @@ namespace Unicom_TIC_Management_System.View
 
         private void dgvTimetable_systemchanged(object sender, EventArgs e)
         {
-            if(dgvTimetable.SelectedRows.Count > 0)
+            if (dgvTimetable.SelectedRows.Count > 0)
             {
                 var row = dgvTimetable.SelectedRows[0];
                 selectedID = Convert.ToInt32(row.Cells["TimetableID"].Value);
@@ -76,7 +76,7 @@ namespace Unicom_TIC_Management_System.View
         private TimetableController timetableController = new TimetableController();
         private int selectedID = -1;
 
-        
+
         private void LoadSubjects()
         {
             cmbSubject.Items.Clear();
@@ -188,10 +188,26 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void cmbSubject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvTimetable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+
+
+
+
+
+        }
     }
 
-    }
+}
 
 
-    
+
 

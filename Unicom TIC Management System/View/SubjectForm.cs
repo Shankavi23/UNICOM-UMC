@@ -138,6 +138,16 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCourseID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
         
     

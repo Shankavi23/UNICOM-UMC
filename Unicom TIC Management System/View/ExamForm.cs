@@ -154,5 +154,10 @@ namespace Unicom_TIC_Management_System.View
                 }
             }
         }
+
+        private void lblSubjectID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

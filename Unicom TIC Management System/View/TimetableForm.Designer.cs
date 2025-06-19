@@ -51,10 +51,9 @@
             this.Lb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Lb.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lb.Location = new System.Drawing.Point(127, 34);
-            this.Lb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lb.Location = new System.Drawing.Point(245, 48);
             this.Lb.Name = "Lb";
-            this.Lb.Size = new System.Drawing.Size(57, 14);
+            this.Lb.Size = new System.Drawing.Size(87, 21);
             this.Lb.TabIndex = 0;
             this.Lb.Text = "Subject";
             // 
@@ -64,10 +63,9 @@
             this.Lbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Lbl.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Lbl.Location = new System.Drawing.Point(127, 77);
-            this.Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Lbl.Location = new System.Drawing.Point(245, 90);
             this.Lbl.Name = "Lbl";
-            this.Lbl.Size = new System.Drawing.Size(66, 14);
+            this.Lbl.Size = new System.Drawing.Size(100, 21);
             this.Lbl.TabIndex = 1;
             this.Lbl.Text = "Time Slot";
             // 
@@ -77,38 +75,36 @@
             this.lb3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lb3.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb3.Location = new System.Drawing.Point(127, 117);
-            this.lb3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb3.Location = new System.Drawing.Point(245, 128);
             this.lb3.Name = "lb3";
-            this.lb3.Size = new System.Drawing.Size(40, 14);
+            this.lb3.Size = new System.Drawing.Size(59, 21);
             this.lb3.TabIndex = 2;
             this.lb3.Text = "Room";
             // 
             // cmbSubject
             // 
+            this.cmbSubject.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSubject.FormattingEnabled = true;
-            this.cmbSubject.Location = new System.Drawing.Point(226, 31);
-            this.cmbSubject.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSubject.Location = new System.Drawing.Point(408, 42);
             this.cmbSubject.Name = "cmbSubject";
-            this.cmbSubject.Size = new System.Drawing.Size(144, 21);
+            this.cmbSubject.Size = new System.Drawing.Size(428, 27);
             this.cmbSubject.TabIndex = 3;
             this.cmbSubject.Text = "DropDownList";
             // 
             // txtTimeSlot
             // 
-            this.txtTimeSlot.Location = new System.Drawing.Point(226, 77);
-            this.txtTimeSlot.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTimeSlot.Location = new System.Drawing.Point(408, 87);
             this.txtTimeSlot.Name = "txtTimeSlot";
-            this.txtTimeSlot.Size = new System.Drawing.Size(144, 20);
+            this.txtTimeSlot.Size = new System.Drawing.Size(428, 26);
             this.txtTimeSlot.TabIndex = 4;
             // 
             // cmbRoom
             // 
+            this.cmbRoom.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRoom.FormattingEnabled = true;
-            this.cmbRoom.Location = new System.Drawing.Point(226, 117);
-            this.cmbRoom.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbRoom.Location = new System.Drawing.Point(408, 126);
             this.cmbRoom.Name = "cmbRoom";
-            this.cmbRoom.Size = new System.Drawing.Size(144, 21);
+            this.cmbRoom.Size = new System.Drawing.Size(428, 27);
             this.cmbRoom.TabIndex = 5;
             this.cmbRoom.Text = "DropDownList";
             this.cmbRoom.SelectedIndexChanged += new System.EventHandler(this.cmbRoom_SelectedIndexChanged);
@@ -118,10 +114,9 @@
             this.btnAdd.BackColor = System.Drawing.Color.Teal;
             this.btnAdd.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAdd.Location = new System.Drawing.Point(414, 31);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Location = new System.Drawing.Point(732, 187);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(69, 24);
+            this.btnAdd.Size = new System.Drawing.Size(104, 37);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -132,10 +127,9 @@
             this.Bt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Bt.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Bt.Location = new System.Drawing.Point(413, 77);
-            this.Bt.Margin = new System.Windows.Forms.Padding(2);
+            this.Bt.Location = new System.Drawing.Point(572, 189);
             this.Bt.Name = "Bt";
-            this.Bt.Size = new System.Drawing.Size(70, 23);
+            this.Bt.Size = new System.Drawing.Size(105, 35);
             this.Bt.TabIndex = 7;
             this.Bt.Text = "Update";
             this.Bt.UseVisualStyleBackColor = false;
@@ -146,10 +140,9 @@
             this.btnDelete.BackColor = System.Drawing.Color.Maroon;
             this.btnDelete.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDelete.Location = new System.Drawing.Point(413, 117);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Location = new System.Drawing.Point(408, 190);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(67, 22);
+            this.btnDelete.Size = new System.Drawing.Size(100, 34);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -158,21 +151,21 @@
             // dgvTimetable
             // 
             this.dgvTimetable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTimetable.Location = new System.Drawing.Point(66, 159);
-            this.dgvTimetable.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvTimetable.Location = new System.Drawing.Point(183, 260);
             this.dgvTimetable.Name = "dgvTimetable";
             this.dgvTimetable.RowHeadersWidth = 62;
             this.dgvTimetable.RowTemplate.Height = 28;
-            this.dgvTimetable.Size = new System.Drawing.Size(489, 181);
+            this.dgvTimetable.Size = new System.Drawing.Size(668, 257);
             this.dgvTimetable.TabIndex = 9;
             this.dgvTimetable.SelectionChanged += new System.EventHandler(this.dgvTimetable_systemchanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(42, 42);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 36);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -181,17 +174,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 77);
+            this.label1.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 134);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.Size = new System.Drawing.Size(163, 19);
             this.label1.TabIndex = 11;
-            this.label1.Text = "student";
+            this.label1.Text = "Timetable Detials";
             // 
             // TimetableForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 369);
+            this.ClientSize = new System.Drawing.Size(909, 568);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvTimetable);
@@ -205,6 +200,7 @@
             this.Controls.Add(this.Lbl);
             this.Controls.Add(this.Lb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TimetableForm";
             this.Text = "TimetableForm";
             this.Load += new System.EventHandler(this.TimetableForm_Load);

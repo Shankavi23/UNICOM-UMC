@@ -35,6 +35,8 @@ namespace Unicom_TIC_Management_System.View
         private int selectedRoomId = -1;
         private void ShowsRoomList(object sender, EventArgs e)
         {
+            dgvRooms.SelectionChanged += ShowsRoomList;
+
             if (dgvRooms.CurrentRow != null && dgvRooms.CurrentRow.Index >= 0)
             {
                 selectedRoomId = Convert.ToInt32(dgvRooms.CurrentRow.Cells["RoomID"].Value);
@@ -46,8 +48,9 @@ namespace Unicom_TIC_Management_System.View
             {
                 selectedRoomId = -1;
                 txtRoomName.Clear();
-              //  txtPassword.Clear();
-                cmbRoomType.SelectedIndex = -1;
+                //  txtPassword.Clear();
+                cmbRoomType.SelectedIndex = 0; // Optional default
+
             }
         }
 
@@ -56,10 +59,7 @@ namespace Unicom_TIC_Management_System.View
             if (dgvRooms.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = dgvRooms.SelectedRows[0];
-
-                // Assign values to text boxes
                 txtRoomName.Text = selectedRow.Cells["RoomName"].Value?.ToString();
-
             }
         }
 
@@ -122,7 +122,9 @@ namespace Unicom_TIC_Management_System.View
 
         private void ClearFields()
         {
-            txtRoomName.Text = "";
+            txtRoomName.Clear();
+            cmbRoomType.SelectedIndex = -1;
+            selectedRoomId = -1;
         }
 
         private void dgvRooms_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -133,20 +135,21 @@ namespace Unicom_TIC_Management_System.View
         private void btnUpdateRoom_Click(object sender, EventArgs e)
         {
 
+            if (selectedRoomId == -1)
             {
-                Room updatedRoom = new Room
-                {
-                    RoomID = selectedRoomId,
-                    RoomName = txtRoomName.Text.Trim(),
-                    RoomType= cmbRoomType.Text.Trim()
-                };
-
-                RoomController roomController = new RoomController();
-                roomController.Update(updatedRoom);
-
-                LoadRooms(); // Refresh the grid after update
-
+                MessageBox.Show("Please select a room to update.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
+
+            if (string.IsNullOrWhiteSpace(txtRoomName.Text) || cmbRoomType.SelectedItem == null)
+            {
+                MessageBox.Show("Please fill all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var result = MessageBox.Show("Are you sure you want to update this room?", "Confirm Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No) return;
+
         }
 
         private RoomController roomController = new RoomController();

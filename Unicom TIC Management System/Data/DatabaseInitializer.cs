@@ -47,10 +47,14 @@ namespace Unicom_TIC_Management_System.Data
                         RoomType TEXT NOT NULL
                     );
 
-                CREATE TABLE IF NOT EXISTS Student (
+                 CREATE TABLE IF NOT EXISTS Student (
                         StudentID INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         CourseID INTEGER NOT NULL,
+                        DateOfBirth INTEGER NOT NULL, 
+                        Email TEXT NOT NULL,
+                        PhoneNumber INTEGER NOT NULL,
+                        Gender TEXT NOT NULL,
                         PRIMARY KEY (StudentID),
                         FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
                     );

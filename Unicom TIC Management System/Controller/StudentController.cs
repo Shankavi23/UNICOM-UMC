@@ -14,9 +14,14 @@ namespace Unicom_TIC_Management_System.Controller
             using (var conn = DbConfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = "INSERT INTO Student (Name, CourseID) VALUES (@name, @courseId)";
+                cmd.CommandText = "INSERT INTO Student (Name, CourseID, DateOfBirth, Email, PhoneNumber, Gender, Address) VALUES (@name, @courseId,@dob, @email, @phone, @gender, @address)";
                 cmd.Parameters.AddWithValue("@name", student.Name);
                 cmd.Parameters.AddWithValue("@courseId", student.CourseID);
+                cmd.Parameters.AddWithValue("@dob", student.DateOfBirth);
+                cmd.Parameters.AddWithValue("@email", student.Email);
+                cmd.Parameters.AddWithValue("@phone", student.PhoneNumber);
+                cmd.Parameters.AddWithValue("@gender", student.Gender);
+                cmd.Parameters.AddWithValue("@address", student.Address);
                 cmd.ExecuteNonQuery();
             }
         }
@@ -29,7 +34,7 @@ namespace Unicom_TIC_Management_System.Controller
             using (var conn = DbConfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT StudentID, Name, CourseID FROM Student";
+                cmd.CommandText = "SELECT StudentID, Name, CourseID , DateOfBirth, Email, PhoneNumber, Gender, Address FROM Student";
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -39,7 +44,12 @@ namespace Unicom_TIC_Management_System.Controller
                         {
                             StudentID = Convert.ToInt32(reader["StudentID"]),
                             Name = reader["Name"].ToString(),
-                            CourseID = Convert.ToInt32(reader["CourseID"])
+                            CourseID = Convert.ToInt32(reader["CourseID"]),
+                            DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
+                            Email = reader["Email"].ToString(),
+                            PhoneNumber = Convert.ToInt32(reader["PhoneNumber"]),
+                            Gender = reader["Gender"].ToString(),
+                            Address = reader["Address"].ToString()
                         });
                     }
                 }
@@ -54,10 +64,15 @@ namespace Unicom_TIC_Management_System.Controller
             using (var conn = DbConfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = "UPDATE Student SET Name = @name, CourseID = @courseId WHERE StudentID = @id";
+                cmd.CommandText = "UPDATE Student SET Name = @name, CourseID = @courseId , DateOfBirth = @dob, Email = @email, PhoneNumber = @phone,Gender = @gender, Address = @address  WHERE StudentID = @id";
                 cmd.Parameters.AddWithValue("@name", student.Name);
                 cmd.Parameters.AddWithValue("@courseId", student.CourseID);
                 cmd.Parameters.AddWithValue("@id", student.StudentID);
+                cmd.Parameters.AddWithValue("@dob", student.DateOfBirth);
+                cmd.Parameters.AddWithValue("@email", student.Email);
+                cmd.Parameters.AddWithValue("@phone", student.PhoneNumber);
+                cmd.Parameters.AddWithValue("@gender", student.Gender);
+                cmd.Parameters.AddWithValue("@address", student.Address);
                 cmd.ExecuteNonQuery();
             }
         }

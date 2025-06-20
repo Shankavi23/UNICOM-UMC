@@ -46,13 +46,13 @@
             // lblSubjectName
             // 
             this.lblSubjectName.AutoSize = true;
-            this.lblSubjectName.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSubjectName.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubjectName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSubjectName.Location = new System.Drawing.Point(156, 38);
+            this.lblSubjectName.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblSubjectName.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.lblSubjectName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSubjectName.Location = new System.Drawing.Point(256, 67);
             this.lblSubjectName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSubjectName.Name = "lblSubjectName";
-            this.lblSubjectName.Size = new System.Drawing.Size(91, 14);
+            this.lblSubjectName.Size = new System.Drawing.Size(146, 22);
             this.lblSubjectName.TabIndex = 0;
             this.lblSubjectName.Text = "Subject Name";
             this.lblSubjectName.Click += new System.EventHandler(this.lblSubjectName_Click);
@@ -60,45 +60,45 @@
             // lblCourseID
             // 
             this.lblCourseID.AutoSize = true;
-            this.lblCourseID.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCourseID.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblCourseID.Location = new System.Drawing.Point(156, 75);
+            this.lblCourseID.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCourseID.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.lblCourseID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCourseID.Location = new System.Drawing.Point(256, 135);
             this.lblCourseID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCourseID.Name = "lblCourseID";
-            this.lblCourseID.Size = new System.Drawing.Size(68, 14);
+            this.lblCourseID.Size = new System.Drawing.Size(106, 22);
             this.lblCourseID.TabIndex = 1;
             this.lblCourseID.Text = "COURSE ID";
             this.lblCourseID.Click += new System.EventHandler(this.lblCourseID_Click);
             // 
             // txtSubjectName
             // 
-            this.txtSubjectName.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubjectName.Location = new System.Drawing.Point(269, 31);
+            this.txtSubjectName.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.txtSubjectName.Location = new System.Drawing.Point(428, 59);
             this.txtSubjectName.Margin = new System.Windows.Forms.Padding(2);
             this.txtSubjectName.Name = "txtSubjectName";
-            this.txtSubjectName.Size = new System.Drawing.Size(305, 21);
+            this.txtSubjectName.Size = new System.Drawing.Size(534, 30);
             this.txtSubjectName.TabIndex = 2;
             // 
             // cmbCourseID
             // 
-            this.cmbCourseID.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCourseID.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.cmbCourseID.FormattingEnabled = true;
-            this.cmbCourseID.Location = new System.Drawing.Point(269, 73);
+            this.cmbCourseID.Location = new System.Drawing.Point(428, 135);
             this.cmbCourseID.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCourseID.Name = "cmbCourseID";
-            this.cmbCourseID.Size = new System.Drawing.Size(305, 21);
+            this.cmbCourseID.Size = new System.Drawing.Size(534, 30);
             this.cmbCourseID.TabIndex = 3;
             // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Teal;
-            this.btnAdd.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAdd.Location = new System.Drawing.Point(269, 110);
+            this.btnAdd.Location = new System.Drawing.Point(428, 205);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(77, 29);
+            this.btnAdd.Size = new System.Drawing.Size(100, 37);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -107,12 +107,12 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdate.Location = new System.Drawing.Point(380, 110);
+            this.btnUpdate.Location = new System.Drawing.Point(647, 205);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(78, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(103, 37);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -121,12 +121,12 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.DarkRed;
-            this.btnDelete.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDelete.Location = new System.Drawing.Point(496, 110);
+            this.btnDelete.Location = new System.Drawing.Point(859, 205);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(78, 29);
+            this.btnDelete.Size = new System.Drawing.Size(103, 37);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -136,12 +136,12 @@
             // 
             this.dgvSubjects.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvSubjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSubjects.Location = new System.Drawing.Point(159, 163);
+            this.dgvSubjects.Location = new System.Drawing.Point(260, 281);
             this.dgvSubjects.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSubjects.Name = "dgvSubjects";
             this.dgvSubjects.RowHeadersWidth = 62;
             this.dgvSubjects.RowTemplate.Height = 28;
-            this.dgvSubjects.Size = new System.Drawing.Size(425, 196);
+            this.dgvSubjects.Size = new System.Drawing.Size(715, 302);
             this.dgvSubjects.TabIndex = 7;
             this.dgvSubjects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSubjects_CellContentClick);
             this.dgvSubjects.SelectionChanged += new System.EventHandler(this.dgvSubjects_SelectionChanged);
@@ -149,10 +149,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 24);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 69);
+            this.pictureBox1.Size = new System.Drawing.Size(88, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -160,11 +160,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 106);
+            this.label1.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.label1.Location = new System.Drawing.Point(18, 126);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 14);
+            this.label1.Size = new System.Drawing.Size(170, 22);
             this.label1.TabIndex = 9;
             this.label1.Text = "Subject detials";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -174,7 +174,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(608, 370);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1453, 658);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvSubjects);

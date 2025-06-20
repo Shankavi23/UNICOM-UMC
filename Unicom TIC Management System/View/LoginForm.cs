@@ -105,5 +105,10 @@ namespace Unicom_TIC_Management_System.View
         {
 
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

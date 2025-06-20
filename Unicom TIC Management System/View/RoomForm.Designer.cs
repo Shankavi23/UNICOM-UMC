@@ -46,45 +46,45 @@
             // Roomname
             // 
             this.Roomname.AutoSize = true;
-            this.Roomname.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Roomname.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Roomname.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Roomname.Location = new System.Drawing.Point(137, 38);
+            this.Roomname.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Roomname.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.Roomname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Roomname.Location = new System.Drawing.Point(279, 61);
             this.Roomname.Name = "Roomname";
-            this.Roomname.Size = new System.Drawing.Size(74, 14);
+            this.Roomname.Size = new System.Drawing.Size(118, 22);
             this.Roomname.TabIndex = 0;
             this.Roomname.Text = "ROOM NAME";
             // 
             // RoomType
             // 
             this.RoomType.AutoSize = true;
-            this.RoomType.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.RoomType.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoomType.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.RoomType.Location = new System.Drawing.Point(137, 81);
+            this.RoomType.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.RoomType.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.RoomType.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.RoomType.Location = new System.Drawing.Point(279, 131);
             this.RoomType.Name = "RoomType";
-            this.RoomType.Size = new System.Drawing.Size(72, 14);
+            this.RoomType.Size = new System.Drawing.Size(112, 22);
             this.RoomType.TabIndex = 2;
             this.RoomType.Text = "ROOM TYPE";
             // 
             // txtRoomName
             // 
             this.txtRoomName.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtRoomName.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRoomName.Location = new System.Drawing.Point(263, 36);
+            this.txtRoomName.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.txtRoomName.Location = new System.Drawing.Point(454, 61);
             this.txtRoomName.Name = "txtRoomName";
-            this.txtRoomName.Size = new System.Drawing.Size(308, 21);
+            this.txtRoomName.Size = new System.Drawing.Size(546, 30);
             this.txtRoomName.TabIndex = 3;
             this.txtRoomName.TextChanged += new System.EventHandler(this.txtRoomName_TextChanged);
             // 
             // cmbRoomType
             // 
             this.cmbRoomType.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.cmbRoomType.Font = new System.Drawing.Font("Stencil", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRoomType.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.cmbRoomType.FormattingEnabled = true;
-            this.cmbRoomType.Location = new System.Drawing.Point(263, 81);
+            this.cmbRoomType.Location = new System.Drawing.Point(454, 131);
             this.cmbRoomType.Name = "cmbRoomType";
-            this.cmbRoomType.Size = new System.Drawing.Size(308, 21);
+            this.cmbRoomType.Size = new System.Drawing.Size(546, 30);
             this.cmbRoomType.TabIndex = 4;
             this.cmbRoomType.Text = "Values: Room  ,   Hall";
             this.cmbRoomType.SelectedIndexChanged += new System.EventHandler(this.cmbRoomType_SelectedIndexChanged);
@@ -92,11 +92,11 @@
             // btnDeleteRoom
             // 
             this.btnDeleteRoom.BackColor = System.Drawing.Color.Maroon;
-            this.btnDeleteRoom.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteRoom.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.btnDeleteRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDeleteRoom.Location = new System.Drawing.Point(502, 122);
+            this.btnDeleteRoom.Location = new System.Drawing.Point(897, 211);
             this.btnDeleteRoom.Name = "btnDeleteRoom";
-            this.btnDeleteRoom.Size = new System.Drawing.Size(69, 29);
+            this.btnDeleteRoom.Size = new System.Drawing.Size(103, 37);
             this.btnDeleteRoom.TabIndex = 5;
             this.btnDeleteRoom.Text = "DELETE";
             this.btnDeleteRoom.UseVisualStyleBackColor = false;
@@ -105,11 +105,11 @@
             // btnUpdateRoom
             // 
             this.btnUpdateRoom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdateRoom.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateRoom.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.btnUpdateRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUpdateRoom.Location = new System.Drawing.Point(392, 122);
+            this.btnUpdateRoom.Location = new System.Drawing.Point(678, 211);
             this.btnUpdateRoom.Name = "btnUpdateRoom";
-            this.btnUpdateRoom.Size = new System.Drawing.Size(69, 29);
+            this.btnUpdateRoom.Size = new System.Drawing.Size(99, 37);
             this.btnUpdateRoom.TabIndex = 6;
             this.btnUpdateRoom.Text = "UPDATE ";
             this.btnUpdateRoom.UseVisualStyleBackColor = false;
@@ -118,11 +118,11 @@
             // btnAddRoom
             // 
             this.btnAddRoom.BackColor = System.Drawing.Color.Teal;
-            this.btnAddRoom.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRoom.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.btnAddRoom.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAddRoom.Location = new System.Drawing.Point(272, 122);
+            this.btnAddRoom.Location = new System.Drawing.Point(464, 211);
             this.btnAddRoom.Name = "btnAddRoom";
-            this.btnAddRoom.Size = new System.Drawing.Size(69, 29);
+            this.btnAddRoom.Size = new System.Drawing.Size(80, 37);
             this.btnAddRoom.TabIndex = 7;
             this.btnAddRoom.Text = "ADD ";
             this.btnAddRoom.UseVisualStyleBackColor = false;
@@ -132,10 +132,10 @@
             // 
             this.dgvRooms.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRooms.Location = new System.Drawing.Point(140, 166);
+            this.dgvRooms.Location = new System.Drawing.Point(272, 316);
             this.dgvRooms.Name = "dgvRooms";
             this.dgvRooms.RowHeadersWidth = 62;
-            this.dgvRooms.Size = new System.Drawing.Size(439, 193);
+            this.dgvRooms.Size = new System.Drawing.Size(728, 268);
             this.dgvRooms.TabIndex = 8;
             this.dgvRooms.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRooms_CellContentClick);
             this.dgvRooms.SelectionChanged += new System.EventHandler(this.ShowsRoomList);
@@ -143,10 +143,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 37);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
@@ -154,11 +154,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 84);
+            this.label1.Font = new System.Drawing.Font("Stencil", 14.25F);
+            this.label1.Location = new System.Drawing.Point(11, 131);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 14);
+            this.label1.Size = new System.Drawing.Size(142, 22);
             this.label1.TabIndex = 10;
             this.label1.Text = "Room Details";
             // 
@@ -167,7 +167,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(606, 371);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1434, 643);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvRooms);

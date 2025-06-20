@@ -10,6 +10,8 @@ namespace Unicom_TIC_Management_System.Models
     {
         public int StudentID { get; set; }       
         public string Name { get; set; }       
-        public int CourseID { get; set; }       
+        public int CourseID { get; set; } 
+        
+        
     }
 }

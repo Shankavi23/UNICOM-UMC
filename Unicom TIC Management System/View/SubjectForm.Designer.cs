@@ -91,6 +91,7 @@
             this.cmbCourseID.Name = "cmbCourseID";
             this.cmbCourseID.Size = new System.Drawing.Size(502, 30);
             this.cmbCourseID.TabIndex = 3;
+            this.cmbCourseID.SelectedIndexChanged += new System.EventHandler(this.cmbCourseID_SelectedIndexChanged_1);
             // 
             // btnAdd
             // 

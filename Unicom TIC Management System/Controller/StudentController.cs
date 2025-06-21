@@ -43,9 +43,10 @@ namespace Unicom_TIC_Management_System.Controller
                         students.Add(new Student
                         {
                             StudentID = Convert.ToInt32(reader["StudentID"]),
-                            Name = reader["Name"].ToString(),
+                            Name = reader["Name"].ToString(), 
                             CourseID = Convert.ToInt32(reader["CourseID"]),
-                            DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]),
+                            DateOfBirth = DateTimeOffset.FromUnixTimeSeconds(Convert.ToInt64(reader["DateOfBirth"])).DateTime,
+
                             Email = reader["Email"].ToString(),
                             PhoneNumber = Convert.ToInt32(reader["PhoneNumber"]),
                             Gender = reader["Gender"].ToString(),

@@ -44,7 +44,7 @@ namespace Unicom_TIC_Management_System.View
         }
 
         private void dgvSubjects_SelectionChanged(object sender, EventArgs e)
-        {
+        {   
             if (dgvSubjects.CurrentRow != null)
             {
                 // Get the CourseName value from the selected row
@@ -155,6 +155,11 @@ namespace Unicom_TIC_Management_System.View
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbCourseID_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

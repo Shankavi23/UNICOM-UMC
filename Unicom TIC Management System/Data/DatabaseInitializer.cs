@@ -27,7 +27,7 @@ namespace Unicom_TIC_Management_System.Data
                         ExamID INTEGER PRIMARY KEY AUTOINCREMENT,
                         ExamName TEXT NOT NULL,
                         SubjectID INTEGER NOT NULL,
-                        PRIMARY KEY (ExamID),
+                         
                         FOREIGN KEY (SubjectID) REFERENCES Subject(SubjectID)
                     );
                     
@@ -36,7 +36,7 @@ namespace Unicom_TIC_Management_System.Data
                         StudentID INTEGER NOT NULL,
                         ExamID INTEGER NOT NULL,
                         Score INTEGER NOT NULL,
-                        PRIMARY KEY (MarkID),
+                        
                         FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
                         FOREIGN KEY (ExamID) REFERENCES Exam(ExamID)
                     );
@@ -55,7 +55,8 @@ namespace Unicom_TIC_Management_System.Data
                         Email TEXT NOT NULL,
                         PhoneNumber INTEGER NOT NULL,
                         Gender TEXT NOT NULL,
-                        PRIMARY KEY (StudentID),
+                        Address TEXT NOT NULL,
+                        
                         FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
                     );
 
@@ -63,7 +64,7 @@ namespace Unicom_TIC_Management_System.Data
                         SubjectID INTEGER PRIMARY KEY AUTOINCREMENT,
                         SubjectName TEXT NOT NULL,
                         CourseID INTEGER NOT NULL,
-                        PRIMARY KEY (SubjectID),
+                        
                         FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
 
                     );
@@ -73,7 +74,7 @@ namespace Unicom_TIC_Management_System.Data
                         SubjectID INTEGER NOT NULL,
                         TimeSlot TEXT NOT NULL,
                         RoomID INTEGER NOT NULL,
-                        PRIMARY KEY (TimetableID),
+                        
                         FOREIGN KEY (SubjectID) REFERENCES Subject(SubjectID),
                         FOREIGN KEY (RoomID) REFERENCES Room(RoomID)
 
@@ -84,8 +85,8 @@ namespace Unicom_TIC_Management_System.Data
                         Password TEXT NOT NULL,
                         Role TEXT NOT NULL
                     );
-
-
+                    INSERT INTO User (Username, Password, Role)
+                        VALUES ('admin', 'admin123', 'Admin'); 
                 ";
                 cmd.ExecuteNonQuery();
             }

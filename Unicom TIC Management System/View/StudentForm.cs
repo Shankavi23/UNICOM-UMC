@@ -8,6 +8,7 @@ using System.Xml.Linq;
 using Unicom_TIC_Management_System.Controller;
 using Unicom_TIC_Management_System.Controllers;
 using Unicom_TIC_Management_System.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Unicom_TIC_Management_System.View
 {
@@ -207,7 +208,7 @@ namespace Unicom_TIC_Management_System.View
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Stencil", 11.25F);
-            this.label3.Location = new System.Drawing.Point(247, 148);
+            this.label3.Location = new System.Drawing.Point(568, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 18);
             this.label3.TabIndex = 15;
@@ -225,7 +226,7 @@ namespace Unicom_TIC_Management_System.View
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Stencil", 11.25F);
-            this.label4.Location = new System.Drawing.Point(576, 148);
+            this.label4.Location = new System.Drawing.Point(244, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 18);
             this.label4.TabIndex = 17;
@@ -265,6 +266,7 @@ namespace Unicom_TIC_Management_System.View
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(264, 30);
             this.cmbGender.TabIndex = 21;
+            this.cmbGender.SelectedIndexChanged += new System.EventHandler(this.cmbGender_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -343,7 +345,10 @@ namespace Unicom_TIC_Management_System.View
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
-
+            LoadCourses(); // 🔄 Make sure it's called here too, just in case
+            LoadStudents(); // load all student data
+            string[] genders = { "Male", "Female" };
+            cmbGender.Items.AddRange(genders);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -369,7 +374,13 @@ namespace Unicom_TIC_Management_System.View
             {
                 StudentID = selectedStudentID,
                 Name = txtStudentName.Text,
-                CourseID = (int)cmbCourse.SelectedValue
+                CourseID = (int)cmbCourse.SelectedValue,
+                DateOfBirth = dtpDOB.Value, 
+                Email = txtEmail.Text,
+                PhoneNumber = int.Parse(txtPhone.Text),
+                Address = txtAddress.Text,
+                Gender = cmbGender.SelectedItem?.ToString()
+
             };
 
             StudentController.AddStudent(student);
@@ -412,7 +423,7 @@ namespace Unicom_TIC_Management_System.View
             txtStudentName.Clear();
             txtEmail.Clear();
             txtPhone.Clear();
-            cmbGender.SelectedIndex = -1;
+            cmbGender.SelectedIndex = -1; 
             txtAddress.Clear();
             dtpDOB.Value = DateTime.Today;
             cmbCourse.SelectedIndex = -1;
@@ -426,7 +437,7 @@ namespace Unicom_TIC_Management_System.View
             {
                 selectedStudentID = Convert.ToInt32(dgvstudents.CurrentRow.Cells["StudentID"].Value);
                 txtStudentName.Text = dgvstudents.CurrentRow.Cells["Name"].Value?.ToString();
-                cmbCourse.Text = dgvstudents.CurrentRow.Cells["courseId"].Value?.ToString();
+                
                 txtStudentName.Text = dgvstudents.CurrentRow.Cells["Name"].Value?.ToString();
                 cmbCourse.SelectedValue = Convert.ToInt32(dgvstudents.CurrentRow.Cells["CourseID"].Value);
                 txtEmail.Text = dgvstudents.CurrentRow.Cells["Email"].Value?.ToString();
@@ -474,6 +485,11 @@ namespace Unicom_TIC_Management_System.View
         }
 
         private void Course_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbGender_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

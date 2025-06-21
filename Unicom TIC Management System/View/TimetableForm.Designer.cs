@@ -64,7 +64,7 @@
             this.Lbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Lbl.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.Lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Lbl.Location = new System.Drawing.Point(267, 110);
+            this.Lbl.Location = new System.Drawing.Point(265, 112);
             this.Lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl.Name = "Lbl";
             this.Lbl.Size = new System.Drawing.Size(104, 22);
@@ -88,7 +88,7 @@
             // 
             this.cmbSubject.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.cmbSubject.FormattingEnabled = true;
-            this.cmbSubject.Location = new System.Drawing.Point(410, 107);
+            this.cmbSubject.Location = new System.Drawing.Point(410, 58);
             this.cmbSubject.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSubject.Name = "cmbSubject";
             this.cmbSubject.Size = new System.Drawing.Size(570, 30);
@@ -98,7 +98,7 @@
             // txtTimeSlot
             // 
             this.txtTimeSlot.Font = new System.Drawing.Font("Stencil", 14.25F);
-            this.txtTimeSlot.Location = new System.Drawing.Point(410, 50);
+            this.txtTimeSlot.Location = new System.Drawing.Point(408, 110);
             this.txtTimeSlot.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimeSlot.Name = "txtTimeSlot";
             this.txtTimeSlot.Size = new System.Drawing.Size(570, 30);

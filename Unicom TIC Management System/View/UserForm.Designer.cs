@@ -157,7 +157,7 @@
             this.dgvUsers.Location = new System.Drawing.Point(296, 327);
             this.dgvUsers.Name = "dgvUsers";
             this.dgvUsers.RowHeadersWidth = 62;
-            this.dgvUsers.Size = new System.Drawing.Size(778, 265);
+            this.dgvUsers.Size = new System.Drawing.Size(819, 302);
             this.dgvUsers.TabIndex = 9;
             this.dgvUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellContentClick);
             this.dgvUsers.SelectionChanged += new System.EventHandler(this.dgvUsers_SelectionChanged);

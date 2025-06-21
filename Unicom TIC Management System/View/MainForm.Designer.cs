@@ -68,7 +68,7 @@
             this.button5.BackColor = System.Drawing.Color.DarkRed;
             this.button5.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(217, 687);
+            this.button5.Location = new System.Drawing.Point(214, 713);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(88, 34);
             this.button5.TabIndex = 10;

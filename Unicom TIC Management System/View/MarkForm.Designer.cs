@@ -159,12 +159,12 @@
             // 
             this.gridMark.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.gridMark.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridMark.Location = new System.Drawing.Point(270, 348);
+            this.gridMark.Location = new System.Drawing.Point(238, 323);
             this.gridMark.Margin = new System.Windows.Forms.Padding(2);
             this.gridMark.Name = "gridMark";
             this.gridMark.RowHeadersWidth = 62;
             this.gridMark.RowTemplate.Height = 28;
-            this.gridMark.Size = new System.Drawing.Size(724, 267);
+            this.gridMark.Size = new System.Drawing.Size(782, 290);
             this.gridMark.TabIndex = 9;
             this.gridMark.SelectionChanged += new System.EventHandler(this.gridMark_SelectionChanged);
             // 

@@ -168,7 +168,7 @@
             this.dgvTimetable.Name = "dgvTimetable";
             this.dgvTimetable.RowHeadersWidth = 62;
             this.dgvTimetable.RowTemplate.Height = 28;
-            this.dgvTimetable.Size = new System.Drawing.Size(736, 298);
+            this.dgvTimetable.Size = new System.Drawing.Size(787, 298);
             this.dgvTimetable.TabIndex = 9;
             this.dgvTimetable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTimetable_CellContentClick);
             this.dgvTimetable.SelectionChanged += new System.EventHandler(this.dgvTimetable_systemchanged);

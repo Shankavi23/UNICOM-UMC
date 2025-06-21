@@ -143,7 +143,7 @@
             this.dgvSubjects.Name = "dgvSubjects";
             this.dgvSubjects.RowHeadersWidth = 62;
             this.dgvSubjects.RowTemplate.Height = 28;
-            this.dgvSubjects.Size = new System.Drawing.Size(706, 284);
+            this.dgvSubjects.Size = new System.Drawing.Size(747, 284);
             this.dgvSubjects.TabIndex = 7;
             this.dgvSubjects.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSubjects_CellContentClick);
             this.dgvSubjects.SelectionChanged += new System.EventHandler(this.dgvSubjects_SelectionChanged);

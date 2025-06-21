@@ -58,7 +58,7 @@
             this.view_all_course.Location = new System.Drawing.Point(274, 234);
             this.view_all_course.Name = "view_all_course";
             this.view_all_course.RowHeadersWidth = 62;
-            this.view_all_course.Size = new System.Drawing.Size(728, 302);
+            this.view_all_course.Size = new System.Drawing.Size(728, 362);
             this.view_all_course.TabIndex = 1;
             this.view_all_course.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_all_course_CellContentClick);
             this.view_all_course.SelectionChanged += new System.EventHandler(this.view_all_course_SelectionChanged);

@@ -120,7 +120,7 @@
             this.dgvExams.Location = new System.Drawing.Point(272, 321);
             this.dgvExams.Name = "dgvExams";
             this.dgvExams.RowHeadersWidth = 62;
-            this.dgvExams.Size = new System.Drawing.Size(749, 287);
+            this.dgvExams.Size = new System.Drawing.Size(796, 307);
             this.dgvExams.TabIndex = 6;
             this.dgvExams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvExams.SelectionChanged += new System.EventHandler(this.dgvExams_SelectionChanged);

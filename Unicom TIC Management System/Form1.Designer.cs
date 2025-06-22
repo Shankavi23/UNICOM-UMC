@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.name = new System.Windows.Forms.TextBox();
             this.address = new System.Windows.Forms.TextBox();
             this.stream = new System.Windows.Forms.TextBox();
@@ -42,7 +43,7 @@
             // name
             // 
             this.name.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.name.Location = new System.Drawing.Point(219, 76);
+            this.name.Location = new System.Drawing.Point(188, 72);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(255, 20);
             this.name.TabIndex = 0;
@@ -51,7 +52,7 @@
             // address
             // 
             this.address.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.address.Location = new System.Drawing.Point(219, 134);
+            this.address.Location = new System.Drawing.Point(188, 135);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(255, 20);
             this.address.TabIndex = 1;
@@ -59,7 +60,7 @@
             // stream
             // 
             this.stream.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.stream.Location = new System.Drawing.Point(219, 202);
+            this.stream.Location = new System.Drawing.Point(188, 195);
             this.stream.Name = "stream";
             this.stream.Size = new System.Drawing.Size(255, 20);
             this.stream.TabIndex = 2;
@@ -70,7 +71,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Britannic Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(130, 76);
+            this.label1.Location = new System.Drawing.Point(106, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 12);
             this.label1.TabIndex = 3;
@@ -83,7 +84,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Font = new System.Drawing.Font("Britannic Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(130, 134);
+            this.label2.Location = new System.Drawing.Point(106, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 12);
             this.label2.TabIndex = 4;
@@ -95,7 +96,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(130, 209);
+            this.label3.Location = new System.Drawing.Point(105, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 5;
@@ -107,7 +108,7 @@
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(507, 203);
+            this.button1.Location = new System.Drawing.Point(507, 197);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -119,7 +120,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(507, 132);
+            this.button2.Location = new System.Drawing.Point(507, 135);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -142,6 +143,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(607, 372);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.button2);

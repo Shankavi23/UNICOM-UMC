@@ -469,7 +469,12 @@ namespace Unicom_TIC_Management_System.View
             {
                 StudentID = selectedStudentID,
                 Name = txtStudentName.Text,
-                CourseID = (int)cmbCourse.SelectedValue
+                CourseID = (int)cmbCourse.SelectedValue,
+                DateOfBirth = dtpDOB.Value,
+                Email = txtEmail.Text,
+                PhoneNumber = int.TryParse(txtPhone.Text, out int phone) ? phone : 0, // safer parsing
+                Address = txtAddress.Text,
+                Gender = cmbGender.SelectedItem?.ToString()
 
 
             };

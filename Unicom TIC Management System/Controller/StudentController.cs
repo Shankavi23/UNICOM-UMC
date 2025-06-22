@@ -22,7 +22,7 @@ namespace Unicom_TIC_Management_System.Controller
                 cmd.Parameters.AddWithValue("@phone", student.PhoneNumber);
                 cmd.Parameters.AddWithValue("@gender", student.Gender);
                 cmd.Parameters.AddWithValue("@address", student.Address);
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();  
             }
         }
 

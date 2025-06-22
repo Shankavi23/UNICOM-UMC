@@ -29,38 +29,32 @@ namespace Unicom_TIC_Management_System.View
             Room r = new Room();
             r.RoomName = txtRoomName.Text;
 
-            //RoomController.AddRoom(r);
+            
             MessageBox.Show("Room added.");
         }
         private int selectedRoomId = -1;
         private void ShowsRoomList(object sender, EventArgs e)
         {
-            dgvRooms.SelectionChanged += ShowsRoomList;
+            
 
             if (dgvRooms.CurrentRow != null && dgvRooms.CurrentRow.Index >= 0)
             {
                 selectedRoomId = Convert.ToInt32(dgvRooms.CurrentRow.Cells["RoomID"].Value);
                 txtRoomName.Text = dgvRooms.CurrentRow.Cells["RoomName"].Value?.ToString();
-               // txtPassword.Text = dgvRooms.CurrentRow.Cells["Password"].Value?.ToString();
-                cmbRoomType.Text = dgvRooms.CurrentRow.Cells["RoomType"].Value?.ToString();
+                cmbRoomType.SelectedItem = dgvRooms.CurrentRow.Cells["RoomType"].Value?.ToString();
             }
             else
             {
                 selectedRoomId = -1;
                 txtRoomName.Clear();
-                //  txtPassword.Clear();
-                cmbRoomType.SelectedIndex = 0; // Optional default
+                cmbRoomType.SelectedIndex = 0; 
 
             }
         }
 
         private void txtRoomName_TextChanged(object sender, EventArgs e)
         {
-            if (dgvRooms.SelectedRows.Count > 0)
-            {
-                DataGridViewRow selectedRow = dgvRooms.SelectedRows[0];
-                txtRoomName.Text = selectedRow.Cells["RoomName"].Value?.ToString();
-            }
+            
         }
 
         private void btnAddRoom_Click(object sender, EventArgs e)
@@ -129,7 +123,13 @@ namespace Unicom_TIC_Management_System.View
 
         private void dgvRooms_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvRooms.Rows[e.RowIndex];
+                selectedRoomId = Convert.ToInt32(row.Cells["RoomID"].Value);
+                txtRoomName.Text = row.Cells["RoomName"].Value?.ToString();
+                cmbRoomType.SelectedItem = row.Cells["RoomType"].Value?.ToString();
+            }
         }
 
         private void btnUpdateRoom_Click(object sender, EventArgs e)
@@ -149,7 +149,25 @@ namespace Unicom_TIC_Management_System.View
 
             var result = MessageBox.Show("Are you sure you want to update this room?", "Confirm Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No) return;
+            try
+            {
+                Room updatedRoom = new Room
+                {
+                    RoomID = selectedRoomId,
+                    RoomName = txtRoomName.Text.Trim(),
+                    RoomType = cmbRoomType.SelectedItem.ToString()
+                };
 
+                roomController.Update(updatedRoom);
+                MessageBox.Show("Room updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                LoadRooms();
+                ClearFields();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error updating room: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private RoomController roomController = new RoomController();
@@ -187,7 +205,8 @@ namespace Unicom_TIC_Management_System.View
 
         private void RoomForm_Load(object sender, EventArgs e)
         {
-
+            dgvRooms.SelectionChanged += ShowsRoomList;
+            
         }
     }
 }

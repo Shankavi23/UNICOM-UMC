@@ -47,7 +47,7 @@
             this.txtCourseName.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCourseName.Location = new System.Drawing.Point(483, 75);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(506, 30);
+            this.txtCourseName.Size = new System.Drawing.Size(549, 30);
             this.txtCourseName.TabIndex = 0;
             this.txtCourseName.TextChanged += new System.EventHandler(this.txtCourseName_TextChanged);
             // 
@@ -55,10 +55,10 @@
             // 
             this.view_all_course.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.view_all_course.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.view_all_course.Location = new System.Drawing.Point(274, 234);
+            this.view_all_course.Location = new System.Drawing.Point(244, 230);
             this.view_all_course.Name = "view_all_course";
             this.view_all_course.RowHeadersWidth = 62;
-            this.view_all_course.Size = new System.Drawing.Size(728, 362);
+            this.view_all_course.Size = new System.Drawing.Size(788, 362);
             this.view_all_course.TabIndex = 1;
             this.view_all_course.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.view_all_course_CellContentClick);
             this.view_all_course.SelectionChanged += new System.EventHandler(this.view_all_course_SelectionChanged);
@@ -81,7 +81,7 @@
             this.update.BackColor = System.Drawing.Color.Orange;
             this.update.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.update.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.update.Location = new System.Drawing.Point(687, 156);
+            this.update.Location = new System.Drawing.Point(728, 158);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(92, 33);
             this.update.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.delete.BackColor = System.Drawing.Color.Brown;
             this.delete.Font = new System.Drawing.Font("Stencil", 14.25F);
             this.delete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.delete.Location = new System.Drawing.Point(902, 156);
+            this.delete.Location = new System.Drawing.Point(945, 159);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(87, 33);
             this.delete.TabIndex = 4;
